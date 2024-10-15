@@ -1,0 +1,183 @@
+
+h1{
+    font-size: 400%;
+    justify-content: left;
+    display: flex;
+}
+
+body{
+    background-color: white;
+}
+
+.navegation_bar_home{
+    position: absolute;
+    top: 15px;
+    left: 65%;
+    right: 0%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size:250% ;
+}
+
+.navegation_bar_comprar{
+    position: absolute;
+    top: 15px;
+    left: 70%;
+    right: 0%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size:250% ;
+}
+
+.navegation_bar_ajuda{
+    position: absolute;
+    top: 15px;
+    left: 75%;
+    right: 0%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size:250% ;
+}
+
+
+.navegation_bar_login{
+    position: absolute;
+    top: 15px;
+    left: 80%;
+    right: 0%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size:250% ;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.background_img1{
+    background-image: url(imagens/bmw.jpg);
+    background-color: rgb(198, 35, 35);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.9;
+}
+
+
+.populares{
+    margin: 600px;
+    font-size: 190%;
+    color: gray;
+}
+
+.categorias{
+    margin: 60px;
+    margin-left: 460px;
+    font-size: 190%;
+    color: gray;
+
+}
+
+
+.carroeletrico {
+    width: 35rem;
+    height: 40rem;
+    margin-left: 50%;
+    color: black;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+.Picape{
+    width: 35rem;
+    height: 40rem;
+
+    color: black;
+    box-shadow:0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+.sedans {
+    width: 35rem;
+    height: 40rem;
+    margin-left: -40%;
+    color: black;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+
+.suvs {
+    width: 35rem;
+    height: 40rem;
+    margin-left: -90%;
+    color: black;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+
+.economicos {
+    width: 35rem;
+    height: 40rem;
+    margin-left: 50%;
+    color: black;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+.luxo {
+    width: 35rem;
+    height: 40rem;
+    color: black;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+.hatch {
+    width: 35rem;
+    height: 40rem;
+    margin-left: -41%;
+    color: black;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+.familia {
+    width: 35rem;
+    height: 40rem;
+    margin-left: -90%;
+    color: black;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+}
+
+
+
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagens figure {
+    text-align: center;
+    margin: 0;
+}
+
+.imagens img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imagens figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.carrosmaisbuscados{
+    margin-top: 450px;
+
+}
+
