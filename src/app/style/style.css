@@ -181,3 +181,18 @@ a{
 
 }
 
+.category{
+    height: 300px ;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+}
+p.card-text {
+    font-size: 2rem;
+}
+.h1-category{
+    margin-left: 200px;
+}
+.h1-popular{
+    margin-left: 200px;
+}
