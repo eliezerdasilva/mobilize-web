@@ -1,131 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mobilize.com</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/src/app/style/header.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/app/style/style.css" />
+  <link rel="stylesheet" href="/src/app/style/header.css" />
+  <title>Mobilize.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+</head>
 
-  <body>
-    <header class="w-100 bg-light ">
-        <div class="d-flex justify-content-between ">
-            <img   src="/src/assets/images/logo_mob.png" alt=""  width="100"    height="95"/>        
-            <nav class="navegation blockquote bg-light  mb-0" >
-                <ul class="nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Comprar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ajuda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Logout</a>
-                  </li>
-                </ul>
-              </nav>
+<body>
+  <header class="w-100 bg-light ">
+    <div class="d-flex justify-content-between ">
+      <img src="/src/assets/images/logo_mob.png" alt="" width="100" height="95" />
+      <nav class="navegation blockquote bg-light  mb-0">
+        <ul class="nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ajuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+
+  </header>
+
+
+  <section class="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/src/assets/images/camaro.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/src/assets/images/hatch.png" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/src/assets/images/bmw.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </section>
+  <section class="search bar bg-light ">
+    <div class="container ">
+      <div class=" p-5 w-auto btn-group d-flex justify-content-center" role="group" aria-label="Exemplo básico">
+        <div class="p-4 d-block border h-5 w-100  justify-content-center rounded bg-white">
+
+          <button type="button" class="btn btn-primary border m-2">Todos</button>
+          <button type="button" class="btn btn-light border m-2">Novos</button>
+          <button type="button" class="btn btn-light border m-2">Usados</button>
+
+          <div class="input-group">
+            <input type="text" class="form-control  "  placeholder="Insira a marca ou modelo" aria-label="Input text com botão dropdown">
+            <div class="input-group-append">
+              <button class="btn  btn-primary ml-2 " type="button">Buscar</button>
               
-    </header>
-
-    <div class="background_img1">
-      <figure>
-        <img src="imagens/bmw.jpg" alt="" />
-      </figure>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  <section class="popular">
+    <h1 class="m-5">Populares </h1>
+    <div class="">
 
-    <div class="populares">
-      <h2>Marcas Populares</h2>
-      <a href=""><img src="/src/assets/images/BMW.webp" alt="" /></a>
-      <a href=""><img src="/src/assets/images/BYD.webp" alt="" /></a>
-      <a href=""><img src="/src/assets/images/CHEVROLET.png" alt="" /></a>
-      <a href=""><img src="/src/assets/images/HYUNDAI.png" alt="" /></a>
-      <a href=""><img src="/src/assets/images/NISSAN.png" alt="" /></a>
-      <a href=""><img src="/src/assets/images/TOYOTA.png" alt="" /></a>
-      <a href=""><img src="/src/assets/images/RENAULT.webp" alt="" /></a>
     </div>
+  </section>
+  <h1 class="m-5">Categorias</h1>
+  <section class="category d-flex justify-content-center">
 
-    <div class="categorias">
-      <h2>Categorias</h2>
+    <div class="card " style="width: 20rem;">
+      <img class="card-img-top" src="/src/assets/images/Carroeletrico.jpeg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text"></p>
+      </div>
     </div>
-    <div class="imagens">
-      <figure>
-        <div class="carroeletrico">
-          <img
-            src="/src/assets/images/Carroeletrico.jpeg"
-            style="width: 520px"
-          />
-          <h2>Carros Elétricos</h2>
-        </div>
-      </figure>
-
-      <figure>
-        <div class="Picape">
-          <img src="/src/assets/images/ram.webp" style="width: 550px" />
-          <h2>Picapes</h2>
-        </div>
-      </figure>
-
-      <figure>
-        <div class="sedans">
-          <img src="/src/assets/images/sedan.jpeg" style="width: 550px" />
-          <h2>Sedans</h2>
-        </div>
-      </figure>
-
-      <figure>
-        <div class="suvs">
-          <img src="/src/assets/images/suv.png" style="width: 550px" />
-          <h2>SUVs</h2>
-        </div>
-      </figure>
-
-      <figure>
-        <div class="economicos">
-          <img src="/src/assets/images/dinheiro.jpg" style="width: 550px" />
-          <h2>Carros mais econômicos</h2>
-        </div>
-      </figure>
-
-      <figure>
-        <div class="luxo">
-          <img src="/src/assets/images/ferrari.webp" style="width: 550px" />
-          <h2>Carros de luxo</h2>
-        </div>
-      </figure>
-
-      <figure>
-        <div class="hatch">
-          <img src="/src/assets/images/hatch.png" style="width: 550px" />
-          <h2>Hatch</h2>
-        </div>
-      </figure>
-
-      <figure>
-        <div class="familia">
-          <img
-            src="/src/assets/images/familiadentrodecarro.png"
-            style="width: 550px"
-          />
-          <h2>Carros para a família</h2>
-        </div>
-      </figure>
+    <div class="card" style="width: 20rem;height: 300px;">
+      <img class="card-img-top" src="/src/assets/images/ram.webp" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text"></p>
+      </div>
     </div>
+    <div class="card" style="width: 20rem;height: 300px;">
+      <img class="card-img-top" src="/src/assets/images/sedan.jpeg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem;height: 300px;">
+      <img class="card-img-top" src="/src/assets/images/suv.png" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem;height: 300px;">
+      <img class="card-img-top" src="/src/assets/images/ferrari.webp" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </section>
 
-    <div class="carrosmaisbuscados"></div>
-  </body>
+
+
+
+
+  <div class="carrosmaisbuscados"></div>
+</body>
+
 </html>
