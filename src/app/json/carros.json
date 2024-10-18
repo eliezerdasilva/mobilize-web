@@ -1,0 +1,74 @@
+{
+    "carros": [
+      {
+        "modelo": "Civic",
+        "ano": 2020,
+        "marca": "Honda",
+        "foto": "/src/assets/images/bmw.jpg",
+        "combustivel": "Gasolina"
+      },
+      {
+        "modelo": "Corolla",
+        "ano": 2021,
+        "marca": "Toyota",
+        "foto": "/src/assets/images/camaro.jpg",
+        "combustivel": "Híbrido"
+      },
+      {
+        "modelo": "Mustang",
+        "ano": 2022,
+        "marca": "Ford",
+        "foto": "/src/assets/images/ferrari.webp",
+        "combustivel": "Gasolina"
+      },
+      {
+        "modelo": "Model S",
+        "ano": 2023,
+        "marca": "Tesla",
+        "foto": "/src/assets/images/ram.webp",
+        "combustivel": "Elétrico"
+      },
+      {
+        "modelo": "Onix",
+        "ano": 2019,
+        "marca": "Chevrolet",
+        "foto": "/src/assets/images/suv.png",
+        "combustivel": "Flex"
+      },{
+        "modelo": "Civic",
+        "ano": 2020,
+        "marca": "Honda",
+        "foto": "/src/assets/images/bmw.jpg",
+        "combustivel": "Gasolina"
+      },
+      {
+        "modelo": "Corolla",
+        "ano": 2021,
+        "marca": "Toyota",
+        "foto": "/src/assets/images/camaro.jpg",
+        "combustivel": "Híbrido"
+      },
+      {
+        "modelo": "Mustang",
+        "ano": 2022,
+        "marca": "Ford",
+        "foto": "/src/assets/images/ferrari.webp",
+        "combustivel": "Gasolina"
+      },
+      {
+        "modelo": "Model S",
+        "ano": 2023,
+        "marca": "Tesla",
+        "foto": "/src/assets/images/ram.webp",
+        "combustivel": "Elétrico"
+      },
+      {
+        "modelo": "Onix",
+        "ano": 2019,
+        "marca": "Chevrolet",
+        "foto": "/src/assets/images/suv.png",
+        "combustivel": "Flex"
+      }
+    ]
+  }
+  
