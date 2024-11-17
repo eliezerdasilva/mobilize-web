@@ -5,69 +5,79 @@
         "ano": 2020,
         "marca": "Honda",
         "foto": "/src/assets/images/bmw.jpg",
-        "combustivel": "Gasolina"
+        "combustivel": "Gasolina",
+        "categoria":"sedans"
       },
       {
         "modelo": "Corolla",
         "ano": 2021,
         "marca": "Toyota",
         "foto": "/src/assets/images/camaro.jpg",
-        "combustivel": "Híbrido"
+        "combustivel": "Híbrido",
+        "categoria":"sedans"
       },
       {
         "modelo": "Mustang",
         "ano": 2022,
         "marca": "Ford",
         "foto": "/src/assets/images/ferrari.webp",
-        "combustivel": "Gasolina"
+        "combustivel": "Gasolina",
+        "categoria":"Esportivos"
       },
       {
         "modelo": "Model S",
         "ano": 2023,
         "marca": "Tesla",
         "foto": "/src/assets/images/ram.webp",
-        "combustivel": "Elétrico"
+        "combustivel": "Elétrico",
+        "categoria":"elétricos"
       },
       {
         "modelo": "Onix",
         "ano": 2019,
         "marca": "Chevrolet",
         "foto": "/src/assets/images/suv.png",
-        "combustivel": "Flex"
+        "combustivel": "Gasolina",
+         "categoria":"hats"
       },{
         "modelo": "Civic",
         "ano": 2020,
         "marca": "Honda",
         "foto": "/src/assets/images/bmw.jpg",
-        "combustivel": "Gasolina"
+        "combustivel": "Gasolina",
+         "categoria":"sedans"
       },
       {
         "modelo": "Corolla",
         "ano": 2021,
         "marca": "Toyota",
         "foto": "/src/assets/images/camaro.jpg",
-        "combustivel": "Híbrido"
+        "combustivel": "Híbrido",
+         "categoria":"sedans"
       },
       {
         "modelo": "Mustang",
         "ano": 2022,
         "marca": "Ford",
         "foto": "/src/assets/images/ferrari.webp",
-        "combustivel": "Gasolina"
+        "combustivel": "Gasolina",
+        "categoria":"Esportivos"
       },
       {
         "modelo": "Model S",
         "ano": 2023,
         "marca": "Tesla",
         "foto": "/src/assets/images/ram.webp",
-        "combustivel": "Elétrico"
+        "combustivel": "Elétrico",
+         "categoria":"elétricos"
       },
       {
         "modelo": "Onix",
         "ano": 2019,
         "marca": "Chevrolet",
         "foto": "/src/assets/images/suv.png",
-        "combustivel": "Flex"
+        "combustivel": "Flex",
+         "categoria":"hats"
       }
     ]
   }

@@ -1,8 +1,9 @@
 
+
 fetch('/src/app/json/carros.json')
-.then(response => response.json())  // Converte o arquivo JSON para um objeto JavaScript
+.then(response => response.json())  
 .then(data => {
-  renderCarros(data.carros);  // Chama a função renderCarros com os dados carregados do JSON
+  renderCarros(data.carros);  
 })
 .catch(error => {
   console.error('Erro ao carregar o arquivo JSON:', error);
