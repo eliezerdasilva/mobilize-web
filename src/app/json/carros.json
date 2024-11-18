@@ -1,84 +1,104 @@
 {
-    "carros": [
-      {
-        "modelo": "Civic",
-        "ano": 2020,
-        "marca": "Honda",
-        "foto": "/src/assets/images/bmw.jpg",
-        "combustivel": "Gasolina",
-        "categoria":"sedans"
-      },
-      {
-        "modelo": "Corolla",
-        "ano": 2021,
-        "marca": "Toyota",
-        "foto": "/src/assets/images/camaro.jpg",
-        "combustivel": "Híbrido",
-        "categoria":"sedans"
-      },
-      {
-        "modelo": "Mustang",
-        "ano": 2022,
-        "marca": "Ford",
-        "foto": "/src/assets/images/ferrari.webp",
-        "combustivel": "Gasolina",
-        "categoria":"Esportivos"
-      },
-      {
-        "modelo": "Model S",
-        "ano": 2023,
-        "marca": "Tesla",
-        "foto": "/src/assets/images/ram.webp",
-        "combustivel": "Elétrico",
-        "categoria":"elétricos"
-      },
-      {
-        "modelo": "Onix",
-        "ano": 2019,
-        "marca": "Chevrolet",
-        "foto": "/src/assets/images/suv.png",
-        "combustivel": "Gasolina",
-         "categoria":"hats"
-      },{
-        "modelo": "Civic",
-        "ano": 2020,
-        "marca": "Honda",
-        "foto": "/src/assets/images/bmw.jpg",
-        "combustivel": "Gasolina",
-         "categoria":"sedans"
-      },
-      {
-        "modelo": "Corolla",
-        "ano": 2021,
-        "marca": "Toyota",
-        "foto": "/src/assets/images/camaro.jpg",
-        "combustivel": "Híbrido",
-         "categoria":"sedans"
-      },
-      {
-        "modelo": "Mustang",
-        "ano": 2022,
-        "marca": "Ford",
-        "foto": "/src/assets/images/ferrari.webp",
-        "combustivel": "Gasolina",
-        "categoria":"Esportivos"
-      },
-      {
-        "modelo": "Model S",
-        "ano": 2023,
-        "marca": "Tesla",
-        "foto": "/src/assets/images/ram.webp",
-        "combustivel": "Elétrico",
-         "categoria":"elétricos"
-      },
-      {
-        "modelo": "Onix",
-        "ano": 2019,
-        "marca": "Chevrolet",
-        "foto": "/src/assets/images/suv.png",
-        "combustivel": "Flex",
-         "categoria":"hats"
-      }
-    ]
-  }
-  
+  "carros": [
+    {
+      "modelo": "Civic",
+      "ano": 2020,
+      "marca": "Honda",
+      "foto": "/src/assets/images/bmw.jpg",
+      "combustivel": "Gasolina",
+      "categoria": "sedans",
+      "estado": "novo",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Corolla",
+      "ano": 2021,
+      "marca": "Toyota",
+      "foto": "/src/assets/images/camaro.jpg",
+      "combustivel": "Híbrido",
+      "categoria": "sedans",
+      "estado": "novo",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Mustang",
+      "ano": 2022,
+      "marca": "Ford",
+      "foto": "/src/assets/images/ferrari.webp",
+      "combustivel": "Gasolina",
+      "categoria": "Esportivos",
+      "estado": "usado",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Model S",
+      "ano": 2023,
+      "marca": "Renault",
+      "foto": "/src/assets/images/ram.webp",
+      "combustivel": "Elétrico",
+      "categoria": "elétricos",
+      "estado": "usado",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Onix",
+      "ano": 2019,
+      "marca": "Chevrolet",
+      "foto": "/src/assets/images/suv.png",
+      "combustivel": "Gasolina",
+      "categoria": "hats",
+      "estado": "usado",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Civic",
+      "ano": 2020,
+      "marca": "Honda",
+      "foto": "/src/assets/images/bmw.jpg",
+      "combustivel": "Gasolina",
+      "categoria": "sedans",
+      "estado": "novo",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Corolla",
+      "ano": 2021,
+      "marca": "Fiat",
+      "foto": "/src/assets/images/camaro.jpg",
+      "combustivel": "Híbrido",
+      "categoria": "sedans",
+      "estado": "usado",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Mustang",
+      "ano": 2022,
+      "marca": "Ford",
+      "foto": "/src/assets/images/ferrari.webp",
+      "combustivel": "Gasolina",
+      "categoria": "Esportivos",
+      "estado": "novo",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Model S",
+      "ano": 2023,
+      "marca": "BMW",
+      "foto": "/src/assets/images/ram.webp",
+      "combustivel": "Elétrico",
+      "categoria": "elétricos",
+      "estado": "novo",
+      "tipo":"carro"
+    },
+    {
+      "modelo": "Onix",
+      "ano": 2019,
+      "marca": "Chevrolet",
+      "foto": "/src/assets/images/suv.png",
+      "combustivel": "Flex",
+      "categoria": "hats",
+      "estado": "usado",
+      "tipo":"carro"
+    }
+  ]
+}
