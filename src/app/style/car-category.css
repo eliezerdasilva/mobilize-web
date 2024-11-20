@@ -1,0 +1,64 @@
+.car-category{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6,1fr);
+
+    padding-block: 128px;
+    
+    figure{
+        border-radius: 10px;
+    }
+
+
+    figcaption:hover{
+        color: red;
+    }
+
+    figcaption{
+        display: flex;
+        justify-content:center;
+        
+        font-family:"Poppins", sans-serif;
+        color: black;
+    }
+
+    img{
+        width: 130px;
+        height: 100px;
+        object-fit: cover;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+
+    a:hover{
+        color: white;
+        cursor: pointer;
+        transform: scale(1.25);
+        transition: all 0.2s ease;
+
+    }
+}
+.msg1{
+    padding-block:20px;
+    h1{
+        color: white;
+        padding-block: 58px;
+        font-size: 35px;
+        gap: 12px;
+    }
+    
+    .car_icon{
+        width: 22px;
+        margin-right: 8px;
+    
+    }
+    
+    h2{
+        display: flex;
+        justify-content: center;
+        font-family: "Poppins",sans-serif;
+       
+    
+    }
+
+}
