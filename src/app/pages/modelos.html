@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/app/style/style.css" />
+  <link rel="stylesheet" href="/src/app/style/header.css" />
+  <link rel="icon" href="/src/assets/images/logo_mob.png"/>
+  <title>Mobilize.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="/src/app/scripts/scriptIndex.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/app/scripts/scriptModelos.js"></script>
+  <script src="/src/app/scripts/header.js"></script>  
+  
+</head>
+<body>
+  <header class="w-100 bg-light  fixed-top">
+    <div class="d-flex justify-content-around ">
+      <a href="index.html">
+        <img src="/src/assets/images/logo_mob.png" alt="" width="100" height="95" style="border-radius: 50%" />
+      </a>
+      <nav class="navegation blockquote bg-light mb-0">
+        <ul class="nav ms-auto">
+            <li class="nav-item">
+              <a   href="home.html" ></a> <button class="dropdown-item" type="button">Home</button></a>
+            </li>
+            <li class="nav-item">
+                <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Comprar
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <button class="dropdown-item compra" type="button">Carros Usados</button>
+                    <button class="dropdown-item compra" type="button">Carros Novos</button>
+                    <button class="dropdown-item compra" type="button">Motos Usadas</button>
+                    <button class="dropdown-item compra" type="button">Motos Novas</button>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Marcas
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item marcas" type="button">Ford</button>
+                    <button class="dropdown-item marcas" type="button">BMW</button>
+                    <button class="dropdown-item marcas" type="button">Fiat</button>
+                    <button class="dropdown-item marcas" type="button">Renault</button>
+                </div>
+            </li>
+            <li class="nav-item" id="auth-button">
+                <!-- Aqui vai o conteúdo dinâmico do botão, como 'Entrar' ou 'Perfil', dependendo do estado de login -->
+            </li>
+        </ul>
+    </nav>
+
+
+    
+  </header>
+    </div>
+    <div class="container mt-5">
+      <div class="row pt-5" id="car-list">
+        <!-- Lista de carros aqui -->
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

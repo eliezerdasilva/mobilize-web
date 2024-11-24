@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/assets/images/logo_mob.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Wendy+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0319e9b74e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/app/style/buy_options.css">
+    <script src="/src/app/scripts/header.js"></script>
+
+    <title>Mobilize.com</title>
+</head>
+<body>
+
+    <header>
+        <div class="bg-surface-color"> 
+        <nav class="container">
+        <a href="#" id="logo">
+            <img id="logo_mob"  src="/src/assets/images/logo_mob.png" alt="Logo">
+        </a>
+    
+        <ul id="primary-menu">        
+            <div class="menu">
+                    <a href="#">Comprar</a>
+                    <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Usados</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Novos</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Usadas</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Novas</a>
+                    </div>
+                </div> 
+            
+            <div class="menu">
+                <a href="#">Vender</a>
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-on"></i> Vender Carro</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Vender Moto</a>
+                </div>
+            </div> 
+    
+            <div class="menu">
+                <a href="#">Serviços</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-bell-concierge"></i> Mobilize Serviços</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-shield"></i> Seguro de Veículo</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-calendar-days"></i> Catálogo</a>
+                </div>
+            </div> 
+    
+    
+    
+            <div class="menu">
+                <a href="#">Ajuda</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-globe"></i> Duvidas Frequentes</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-phone"></i> Contato</a>
+                    </div>
+                </div> 
+               
+                <li class="nav-item">
+                  <li class="nav-item" id="auth-button">
+                  </li>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header> 
+    
+
+
+    <main class="container">
+        <aside class="filters">
+            
+            <h2>Filtros</h2>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder=" Ex:Chevrolet Tracker" name="" id="">
+
+            <label for="state_city">Regiões e Cidades</label>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder=" Digite seu Estado/Cidade" name="" id="">
+
+            <select id="filter_options">
+                <option value="">Mais Destaque</option>
+                <option value="">Menores preços</option>
+                <option value="">Maiores preços</option>
+                <option value="">Recentes</option>
+            </select>
+
+            <label for="distance">Distância</label>
+            <select id="distance">
+              <option value="100km">100km</option>
+              <option value="200km">200km</option>
+              <option value="500km">500km</option>
+              <option value="1000km">1000km</option>
+              <option value="All">Todo Brasil</option>
+            </select>
+
+
+            <label for="brand">Marca:</label>
+            <select id="brand">
+              <option value="renault">Renault</option>
+              <option value="fiat">Fiat</option>
+              <option value="chevrolet">Chevrolet</option>
+            </select>
+      
+            <label for="model">Modelo:</label>
+            <select id="model">
+              <option value="choicemodel">Modelo</option>
+              <option value="x">Modelo X</option>
+              <option value="y">Modelo Y</option>
+              <option value="z">Modelo Z</option>
+            </select>
+
+            <label for="ano">Ano</label>
+            <select name="" id="">      
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+            </select>
+
+            <label for="condition">Estado do Veículo</label>
+            <select id="condition">
+                <option value="novo">Novo</option>
+                <option value="usado">Usado</option>
+            </select>
+
+            <label for="style">Estilo</label>
+            <select id="style">
+                <option value="">Estilo</option>
+                <option value="">Picape</option>
+                <option value="">Conversível</option>
+                <option value="">Van</option>
+                <option value="">Hatch</option>
+                <option value="">Suv</option>
+                <option value="">Sedan</option>
+            </select>
+
+            <label for="color">Cor</label>
+            <select id="color">
+                <option value="">Cor</option>
+                <option value="">Vermelho</option>
+                <option value="">Branco</option>
+                <option value="">Azul</option>
+                <option value="">Laranja</option>
+                <option value="">Verde</option>
+
+
+            </select>
+
+
+          </aside>
+
+        <section class="car-listing">
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="/src/assets/images/audi.jpg" alt="Camaro">
+                <div class="car-info">
+                    <div class="car-name">Chevrolet Camaro</div>
+                    <div class="car-details">3.6 LT V6 Automático</div>
+                    <div class="price">R$ 690.000</div>
+                    <div class="year-km">2022/2022 • 31.433 Km</div>
+                    <div class="localization"><i class="fa-solid fa-location-dot"></i> Blumenau - SC</div>
+
+                    <a href="buy.html" class="btn">Ver parcelas</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Mobilize Serviços</a></li>
+                        <li><a href="#">Tabela FIPE</a></li>
+                        <li><a href="#">Financiamento</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Seguro de Veículo</a></li>
+                        <li><a href="#">Multas e Débitos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Notícias MOB</h4>
+                    <ul>
+                        <li><a href="#">Portal</a></li>
+                        <li><a href="#">Últimas Notícias</a></li>
+                        <li><a href="#">Testes</a></li>
+                        <li><a href="#">Comparativos</a></li>
+                        <li><a href="#">Vídeos</a></li>
+                        <li><a href="#">Dicas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Código de Defesa do Consumidor</a></li>
+                        <li><a href="#">LGPD</a></li>
+                        <li><a href="#">Termos de Uso e Política de Privacidade</a></li>
+                        <li><a href="#">Relatorio de Transparência</a></li>
+                        <li><a href="#">Gerenciamento de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   </footer>
+
+
+</body>
+</html>

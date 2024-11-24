@@ -1,0 +1,68 @@
+.containerf{
+    padding: 32px;
+    max-width: 1500px;
+    margin-inline: auto;
+    height: 485px;
+
+}
+
+.info{
+    padding: 100px;
+}
+
+
+.info figure{
+    display: flex;
+    justify-content: right;
+
+}
+
+.info img{
+    width: 600px;
+    height: auto;
+}
+
+.info h1{
+    display: flex;
+    font-size: 40px;
+    margin-right: 1000px;
+    position: relative;
+    top: -480px;
+    text-align: center;
+}
+
+.info span{
+    display: flex;
+    color: black;
+    position:relative;
+    top: -440px;
+}
+
+.inspection-items{
+    display: flex;
+    position: relative;
+    top: -400px;
+}
+
+.inspection-items ul {
+    column-count: 1; 
+    column-gap: 3px; 
+    list-style: none; 
+    padding: 0;
+    
+}
+
+.inspection-items li {
+    font-weight: bold;
+    
+}
+
+.confirm-icon::before{
+    content:"✔";
+    color: red;
+    margin-right: 5px;
+    font-weight: bold;
+
+
+}
+
