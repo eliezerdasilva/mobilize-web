@@ -46,7 +46,7 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+header a:hover{
     color: red;
 }
 
@@ -241,6 +241,7 @@ main {
 
 .btn:hover {
     background-color: #555;
+    color: red;
 }
 
 .car-listing {
