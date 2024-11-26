@@ -3,13 +3,13 @@
 fetch('/src/app/json/carros.json')
 .then(response => response.json())  
 .then(data => {
+
   renderCarros(data.carros);  
 })
 .catch(error => {
   console.error('Erro ao carregar o arquivo JSON:', error);
 });
 
- 
 
 function renderCarros(carros) {
     const carList = document.getElementById('car-list');
@@ -29,6 +29,6 @@ function renderCarros(carros) {
       carList.innerHTML += card; // Adiciona o card ao contêiner
     });
     
-    
+
   }
 

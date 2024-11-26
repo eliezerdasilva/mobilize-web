@@ -1,3 +1,4 @@
+
 #search_bar{
     display: flex;
     justify-content: center;
@@ -40,5 +41,3 @@
     align-self: center;
     padding: 10px 20px;
     color: #777;
-
-}

@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isLoggedIn) {
         // Mostrar o menu "Perfil" se o usuário estiver logado
         authButton.innerHTML = `
+
         <button class="btn perfil-btn" type="button" id="dropdownMenu2">
             Perfil
         </button> 
@@ -49,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         cursor: pointer;
         transition: background-color 0.3s ease;
         `;
-
 
         // Adicionar evento de logout
         document.getElementById("logout").addEventListener("click", () => {
