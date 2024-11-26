@@ -9,7 +9,9 @@
       "categoria": "sedans",
       "estado": "novo",
       "tipo":"carro"
-    },
+
+    }
+    ,
     {
       "modelo": "Corolla",
       "ano": 2021,

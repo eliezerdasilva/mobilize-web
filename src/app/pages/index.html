@@ -5,244 +5,422 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/src/app/style/style.css" />
-  <link rel="stylesheet" href="/src/app/style/header.css" />
   <link rel="icon" href="/src/assets/images/logo_mob.png"/>
+  <link rel="stylesheet" href="/src/app/style/global.css">
+  <link rel="stylesheet" href="/src/app/style/nav.css">
+  <link rel="stylesheet" href="/src/app/style/search.css">
+  <link rel="stylesheet" href="/src/app/style/about_mob.css">
+  <link rel="stylesheet" href="/src/app/style/advantages.css">
+  <link rel="stylesheet" href="/src/app/style/brands.css">
+  <link rel="stylesheet" href="/src/app/style/car-category.css">
+  <link rel="stylesheet" href="/src/app/style/card.css">
+  <link rel="stylesheet" href="/src/app/style/foot.css">
+  <link rel="stylesheet" href="/src/app/style/info.css">
+  <link rel="stylesheet" href="/src/app/style/news.css">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Wendy+One&display=swap" rel="stylesheet">
   <title>Mobilize.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+  <script src="https://kit.fontawesome.com/0319e9b74e.js" crossorigin="anonymous"></script>
   <script src="/src/app/scripts/scriptIndex.js"> </script>
   <script src="/src/app/scripts/header.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
-  <header class="w-100 bg-light  fixed-top">
-    <div class="d-flex justify-content-around ">
-      <a href="index.html">
-        <img src="/src/assets/images/logo_mob.png" alt="" width="100" height="95" style="border-radius: 50%" />
-      </a>
-      <nav class="navegation blockquote bg-light  mb-0">
-        <ul class="nav ms-auto">
-          <li class="nav-item">
-            <a   href="home.html" ></a> <button class="dropdown-item" type="button">Home</button></a>
-          </li>
-          <li class="nav-item">
-            <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Comprar
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item compra" type="button">Carros Usados</button>
-              <button class="dropdown-item compra" type="button">Carros Novos</button>
-              <button class="dropdown-item compra" type="button">Motos Usadas</button>
-              <button class="dropdown-item compra" type="button">Motos Novas</button>
+
+
+
+<header>
+    <div class="bg-surface-color"> 
+    <nav class="container">
+    <a href="#" id="logo">
+        <img id="logo_mob"  src="/src/assets/images/logo_mob.png" alt="Logo">
+    </a>
+
+    <ul id="primary-menu">        
+        <div class="menu">
+                <a href="#">Comprar</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Usados</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Novos</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Usadas</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Novas</a>
+                </div>
+            </div> 
+        
+        <div class="menu">
+            <a href="#">Vender</a>
+            <div class="dropdown-content">
+              <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-car-on"></i> Vender Carro</a>
+                <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Vender Moto</a>
             </div>
-          </li>
-          <li class="nav-item">
-            <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Marcas
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item marcas" type="button">Ford</button>
-              <button class="dropdown-item marcas" type="button">BMW</button>
-              <button class="dropdown-item marcas" type="button">Fiat</button>
-              <button class="dropdown-item marcas" type="button">Renault</button>
+        </div> 
+
+        <div class="menu">
+            <a href="#">Serviços</a>
+            <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-bell-concierge"></i> Mobilize Serviços</a>
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-shield"></i> Seguro de Veículo</a>
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-calendar-days"></i> Catálogo</a>
             </div>
-          </li>
-          <li class="nav-item">
-            <li class="nav-item" id="auth-button">
-          </li>
-          </li>
+        </div> 
+
+
+
+        <div class="menu">
+            <a href="#">Ajuda</a>
+            <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-globe"></i> Duvidas Frequentes</a>
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-phone"></i> Contato</a>
+                </div>
+            </div> 
+           
+            <li class="nav-item">
+              <li class="nav-item" id="auth-button">
+              </li>
+            </li>
+
         </ul>
-      </nav>
+    </nav>
+    </div>
+</header> 
 
-  </header>
 
 
-  <section class="carousel">
-    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="/src/assets/images/camaro.jpg" alt="Primeiro Slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="/src/assets/images/hatch.png" alt="Segundo Slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="/src/assets/images/bmw.jpg" alt="Terceiro Slide">
-        </div>
+<main>
+  <section class="container">  <!--BARRA DE PESQUISA-->
+  <div id="search_bar">
+      <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="search" type="text" placeholder="Procure por sua marca ">
+          <button id="search_btn" type="submit">Buscar</button>
+      </form>
+  </div>
+  </section>
+
+  <section class="container"> <!--IMAGEM PRINCIPAL -->
+  <div id="about_us"> 
+  </div>
+
+
+
+  </section>
+  
+  <section>
+      <div class="bg-surface-color"> <!--MOSTRAR VANTAGENS DO SITE-->
+  <section class="container">
+      <h1 style="padding-block: 30px; font-size: 35px;">O Que Podemos te Oferecer?</h1>
+      <div id="advantages">
+          <div class="card-container">
+              <div class="card" style="background-image: url('/src/assets/images/img1.jpg');">
+                  <div class="overlay"></div>
+                  <div class="card-content">
+                      <h3>Vendas Confiáveis</h3>
+                      <a href="#">Saiba Mais →</a>
+                  </div>
+              </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Próximo</span>
-      </a>
-    </div>
-  </section>
 
-  <section class="search bar bg-light ">
-    <div class="container ">
-      <div class=" p-5 w-auto btn-group d-flex justify-content-center" role="group" aria-label="Exemplo básico">
-        <div class="p-4 d-block border h-5 w-100  justify-content-center rounded bg-white">
-
-          <button type="button" class="btn btn-primary border m-2">Todos</button>
-          <button type="button" class="btn btn-light border m-2">Novos</button>
-          <button type="button" class="btn btn-light border m-2">Usados</button>
-
-          <div class="input-group">
-            <input type="text" class="form-control  " placeholder="Insira a marca ou modelo"
-              aria-label="Input text com botão dropdown">
-            <div class="input-group-append">
-              <button class="btn  btn-primary ml-2 " type="button">Buscar</button>
-
-            </div>
+      <div id="advantages">
+          <div class="card-container">
+              <div class="card" style="background-image: url('/src/assets/images/chave.jpg');">
+                  <div class="overlay"></div>
+                  <div class="card-content">
+                      <h3>Fácil Financiamento</h3>
+                      <a href="#">Saiba Mais →</a>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <section class="popular">
-    <h1 class="h1-popular">Populares </h1>
-    <div class="">
 
-    </div>
-  </section>
-
-  <h1 class="h1-category">Categorias</h1>
-  <section class=" m-2 d-flex justify-content-center">
-
-
-        <div class="card position-static m-2 aa category" style="  background-image: url('/src/assets/images/Carroeletrico.jpeg');">
-          <div class="card-body d-flex justify-content-center align-items-end">
-            <p class="card-text text-white font-weight-bold p ">Elétricos</p>
+      <div id="advantages">
+          <div class="card-container">
+              <div class="card" style="background-image: url('/src/assets/images/servico_especializado.avif');">
+                  <div class="overlay"></div>
+                  <div class="card-content">
+                      <h3>Serviço Especializado</h3>
+                      <a href="#">Saiba Mais →</a>
+                  </div>
+              </div>
           </div>
-        </div>
-   
-    
-        <div class="card position-static m-2 category" style="background-image: url('/src/assets/images/ram.webp'); ">
-          <div class="card-body d-flex justify-content-center align-items-end">
-            <p class="card-text text-white font-weight-bold">Caminhonetes</p>
+      </div>
+
+      <div id="advantages">
+          <div class="card-container">
+              <div class="card" style="background-image: url('/src/assets/images/seguranca_compra.webp');">
+                  <div class="overlay"></div>
+                  <div class="card-content">
+                      <h3>Segurança na compra</h3>
+                      <a href="#">Saiba Mais →</a>
+                  </div>
+              </div>
           </div>
-        </div>
+      </div>
+
      
-    
- 
-        <div class="card  m-2 category position-static" style=" background-image: url('/src/assets/images/sedan.jpeg'); ">
-          <div class="card-body d-flex justify-content-center align-items-end">
-            <p class="card-text font-weight-bold text-white ">Sedans</p>
-          </div>
-        </div>
 
-        <div class="card position-static m-2 category" style=" background-image: url('/src/assets/images/suv.png'); ">
-          <div class="card-body d-flex justify-content-center align-items-end">
-            <p class="card-text font-weight-bold text-white">Suv`s</p>
-          </div>
-        </div>
-    
-        <div class="card position-static m-2 category" style=" background-image: url('/src/assets/images/ferrari.webp'); ">
-          <div class="card-body d-flex justify-content-center align-items-end">
-            <p class="card-text font-weight-bold text-white">Esportivos</p>
-          </div>
-        </div>
-    </div>
+
   </section>
 
-
-  <h4 style="margin-left: 240px; color: gray;">Carros mais buscados</h4>
-  <div class="carrosmaisbuscados">
-    <div class="card-carro">
-      <h4 style="text-align: left; color: white;">Toyota</h4>
-      <h2 style="text-align: left;color: rgb(202, 10, 80);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Corolla</h2>
-      <img src="/src/assets/images/cmb1.webp" alt="Toyota">
-    </div>
-
-      <div class="card-carro">
-          <h4 style="text-align: left; color:white">Honda</h4>
-          <h2 style="text-align: left;color: rgb(202, 10, 80);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">FIT</h2>
-        <img src="/src/assets/images/cmb2.webp" alt="Honda">
       </div>
+  </section>
 
-        <div class="card-carro">
-          <h4 style="text-align: left; color: white;">Volkswagen</h4>
-          <h2 style="text-align: left; color: rgb(202, 10, 80);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">GOL</h2>
-          <img src="/src/assets/images/cmb3.webp" alt="VolkswagenGol">
-        </div>
+  <div class="bg-dark-color">
+      <section class="container">
+          <div class="automobile_brands">
+              <h1>Explore & Escolha a <strong style="color: red;"> Melhor Marca de Automovéis</strong></h1>
+              <a href="#">Ver todas</a>
+              <section class="container"> 
 
-          <div class="card-carro">
-            <h4 style="text-align: left; color: white;">Volkswagen</h4> 
-            <h2 style="text-align: left;color: rgb(202, 10, 80);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">GOLF</h2>
-            <img src="/src/assets/images/cmb4.webp" alt="VolkswagenGolf">
+                  <div class="emphasis">
+                      <div class="card_brand">
+                          <div class="card-image car1"></div>
+                          <div class="inside-card">
+                              <h2>Audi</h2>
+                          </div>
+                      </div>
+                      <div class="card_brand">
+                          <div class="card-image car2"></div>
+                          <div class="inside-card">
+                              <h2>Audi</h2>
+                          </div>
+                      </div>
+                      <div class="card_brand">
+                          <div class="card-image car3"></div>
+                          <div class="inside-card">
+                              <h2>Audi</h2>
+                          </div>
+                      </div>
+                      <div class="card_brand">
+                          <div class="card-image car4"></div>
+                          <div class="inside-card">
+                              <h2>Audi</h2>
+                          </div>
+                      </div>
+                      <div class="card_brand">
+                          <div class="card-image car5"></div>
+                          <div class="inside-card">
+                              <h2>Audi</h2>
+                          </div>
+                      </div>
+                  </div>
+                  
+              
+              </section>
+
+
           </div>
 
-            <div class="card-carro">
-              <h4 style="text-align: left; color: white;">Volkswagen</h4>
-              <h2 style="text-align: left;color: rgb(202, 10, 80); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">JETTA</h2>
-              <img src="/src/assets/images/cmb5.webp" alt="VolkswagenJetta">
+      </section>
+  </div>
+
+  <section class="container">    <!--TIPOS DE CARRO/categorias-->
+      <h1 style="font-size: 35px; gap: 12px;">Explore Nossa Seleção de <span style="color:red">Estilos e Classes de Automóveis</span>.</h1>            
+      
+      <a href="#">
+
+          <div class="car-category">
+              <figure>
+                  <img  src="/src/assets/images/type_sedan.png" alt="">
+                  <figcaption>Sedan's</figcaption>
+              </figure>
+          </a>
+
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_compact.png" alt="">
+                  <figcaption>Compactos</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_convertible.png" alt="">
+                  <figcaption>Conversíveis</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_suv.png" alt="">
+                  <figcaption>SUV's</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_crossover.png" alt="">
+                  <figcaption>Crossover</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_wagon.png" alt="">
+                  <figcaption>Wagon's</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_sports.png" alt="">
+                  <figcaption>Esportivos</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_pickup.png" alt="">
+                  <figcaption>Pickup's</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_family.png" alt="">
+                  <figcaption>Família</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_coupe.png" alt="">
+                  <figcaption>Coupe</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_eletric.png" alt="">
+                  <figcaption>Elétricos</figcaption>
+              </figure>
+          </a>
+          <a href="#">
+              <figure>
+                  <img src="/src/assets/images/type_luxury.png" alt="">
+                  <figcaption>Luxo</figcaption>
+              </figure>
+          </a>
+          </div>
+  </section>
+
+  <div class="bg-surface-color"> 
+      <div class="containerf">
+          <div class="info">
+              <figure><img src="/src/assets/images/front_car.jpg" alt=""></figure>
+              <h1>SEU CARRO IDEAL ESTÁ A UM CLIQUE DE DISTÂNCIA</h1>
+              <span>Os revendedores de automóveis desempenham um papel crucial na indústria automotiva,</span>
+              <span>atuando como intermediários entre os fabricantes automotivos e os clientes individuais.</span>
+              
+
+              <div class="inspection-items">
+                  <ul>
+                      <li class="confirm-icon">Venda de carros novos e usados ​​aos consumidores</li>
+                      <li class="confirm-icon">Compra de carros por meio de parcerias com bancos</li>
+                      <li class="confirm-icon">Troca de veículos de um carro novo ou usado</li>
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <section class="container">
+      <h1 style="font-size: 35px; gap: 12px;">
+          Explore Nossa Seleção de
+          <span style="color:red">NOTÍCIAS</span>.
+      </h1>            
+
+      <div class="noticias-container">
+        <div class="noticias">
+
+          <div class="noticia">
+            <a href="#"><img src="/src/assets/images/audi.jpg" alt="">
+            </a>
+            <div class="descricao">
+              <p class="seubolso">/ 30 de Maio, 2024</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non ea accusamus ullam odio quidem corrupti repudiandae maxime</h3>
+              <p class="autor">por Eliezer da Silva</p>
             </div>
-    </div>
-    <br><br><br>
+          </div>
 
-    <!-- FAZER UM CAROUSEL AQUI--->
-    <h4 style="margin-left:240px; color: gray;">Notícias</h4>
-    <div class="noticias-container">
-      <div class="noticias">
-        <div class="noticia">
-          <img src="/src/assets/images/camaro.jpg" alt="">
-          <div class="descricao">
-            <p class="seubolso">/ Seu bolso</p>
-            <h3>Chevrolet Classic é sedã usado barato e confiável</h3>
-            <p class="autor">por Eliezer da Silva</p>
+          <div class="noticia">
+              <a href="#"><img src="/src/assets/images/audi.jpg" alt="">
+              </a>
+            <div class="descricao">
+              <p class="seubolso">/ 30 de Maio, 2024</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non ea accusamus ullam odio quidem corrupti repudiandae maxime</h3>
+              <p class="autor">por LeandersonL</p>
+            </div>
           </div>
-        </div>
-        <div class="noticia">
-          <img src="/src/assets/images/Carroeletrico.jpeg" alt="">
-          <div class="descricao">
-            <p class="seubolso">/ Seu bolso</p>
-            <h3>Chevrolet Classic é sedã usado barato e confiável</h3>
-            <p class="autor">por LeandersonL</p>
+
+          <div class="noticia">
+              <a href="#"><img src="/src/assets/images/audi.jpg" alt=""></a>
+                  <div class="descricao">
+              <p class="seubolso">/ 30 de Maio, 2024</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non ea accusamus ullam odio quidem corrupti repudiandae maxime</h3>
+              <p class="autor">por Leanderson L</p>
+            </div>
           </div>
-        </div>
-        <div class="noticia">
-          <img src="/src/assets/images/bmw.jpg" alt="">
-          <div class="descricao">
-            <p class="seubolso">/ Seu bolso</p>
-            <h3>Chevrolet Classic é sedã usado barato e confiável</h3>
-            <p class="autor">por Leanderson L</p>
+  </section>
+
+</main>
+
+
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Serviços</h4>
+              <ul>
+                  <li><a href="#">Mobilize Serviços</a></li>
+                  <li><a href="#">Tabela FIPE</a></li>
+                  <li><a href="#">Financiamento</a></li>
+                  <li><a href="#">Catálogo</a></li>
+                  <li><a href="#">Seguro de Veículo</a></li>
+                  <li><a href="#">Multas e Débitos</a></li>
+              </ul>
           </div>
-        </div>
-      <!-- --------------->  
+          <div class="footer-col">
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Segurança</a></li>
+                  <li><a href="#">Quem Somos</a></li>
+                  <li><a href="#">Trabalhe Conosco</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Notícias MOB</h4>
+              <ul>
+                  <li><a href="#">Portal</a></li>
+                  <li><a href="#">Últimas Notícias</a></li>
+                  <li><a href="#">Testes</a></li>
+                  <li><a href="#">Comparativos</a></li>
+                  <li><a href="#">Vídeos</a></li>
+                  <li><a href="#">Dicas</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Institucional</h4>
+              <ul>
+                  <li><a href="#">Código de Defesa do Consumidor</a></li>
+                  <li><a href="#">LGPD</a></li>
+                  <li><a href="#">Termos de Uso e Política de Privacidade</a></li>
+                  <li><a href="#">Relatorio de Transparência</a></li>
+                  <li><a href="#">Gerenciamento de Cookies</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Siga-nos</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
 
       </div>
-    </div>
- 
-    <br><br><br>
-
-    <h4 style="margin-left:240px ; color: gray;">Na Mobilize</h4>
-    <div class="buttons">
-      <button style="width: 250px; height: 50px;" type="button" class="btn btn-danger border m-2">Financiamento</button>
-      <button style="width: 250px; height: 50px;" type="button" class="btn btn-danger border m-2">Vender carro</button>
-      <button style="width: 250px; height: 50px;" type="button" class="btn btn-danger border m-2">Catálogo</button>
-      <button style="width: 250px; height: 50px;" type="button" class="btn btn-danger border m-2">Seguro veículo</button>
-      <button style="width: 250px; height: 50px;" type="button" class="btn btn-danger border m-2">Notícias</button>
-    </div>
-    <br><br><br><br><br>
+  </div>
+</footer>
 
 
 
@@ -250,5 +428,4 @@
 
 
 </body>
-
 </html>

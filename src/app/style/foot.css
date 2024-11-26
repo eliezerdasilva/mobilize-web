@@ -1,15 +1,17 @@
 
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
+
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
 }
+.footer .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer ul{
+	list-style:none;
+}
+
 .footer-col{
    width: 25%;
    padding: 0 15px;
@@ -76,5 +78,4 @@ ul{
     width: 100%;
 }
 }
-
 

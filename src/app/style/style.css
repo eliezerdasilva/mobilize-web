@@ -1,279 +1,34 @@
-
-h1{
-    font-size: 400%;
-    justify-content: left;
-    display: flex;
-}
-
-
-body{
-    background-color: #fff;
-}
-
-.navegation_bar_home{
-    position: absolute;
-    top: 15px;
-    left: 65%;
-    right: 0%;
-    margin: 10px;
-    justify-content: center;
+.menu {
+    position: relative;
+    display: inline-block;
     align-items: center;
-    font-size:250% ;
+    
 }
 
-.navegation_bar_comprar{
-    position: absolute;
-    top: 15px;
-    left: 70%;
-    right: 0%;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    font-size:250% ;
-}
-
-.navegation_bar_ajuda{
-    position: absolute;
-    top: 15px;
-    left: 75%;
-    right: 0%;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    font-size:250% ;
-}
-
-
-.navegation_bar_login{
-    position: absolute;
-    top: 15px;
-    left: 80%;
-    right: 0%;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    font-size:250% ;
-}
-
-a{
+.menu a {
+    color: black;
+    background-color: none;
+    padding: 6px 10px;
     text-decoration: none;
+    display: block;
 }
 
-
-.background_img1{
-    background-image: url(imagens/bmw.jpg);
-    background-color: rgb(198, 35, 35);
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.9;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px black;
+    z-index: 1;
 }
 
-
-.populares{
-    margin: 600px;
-    font-size: 190%;
-    color: gray;
-}
-
-.categorias{
-    margin: 60px;
-    margin-left: 460px;
-    font-size: 190%;
-    color: gray;
-
-}
-
-
-.carroeletrico {
-    width: 35rem;
-    height: 40rem;
-    margin-left: 50%;
+.dropdown-content a {
     color: black;
-    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+    padding: 5px 9px;
+    text-decoration: none;
+    display: block;
 }
 
-.Picape{
-    width: 35rem;
-    height: 40rem;
-
-    color: black;
-    box-shadow:0 0 20px rgba(93, 93, 93, 0.2);
+.menu:hover .dropdown-content {
+    display: block;
 }
-
-.sedans {
-    width: 35rem;
-    height: 40rem;
-    margin-left: -40%;
-    color: black;
-    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-}
-
-
-.suvs {
-    width: 35rem;
-    height: 40rem;
-    margin-left: -90%;
-    color: black;
-    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-}
-
-
-.economicos {
-    width: 35rem;
-    height: 40rem;
-    margin-left: 50%;
-    color: black;
-    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-}
-
-.luxo {
-    width: 35rem;
-    height: 40rem;
-    color: black;
-    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-}
-
-.hatch {
-    width: 35rem;
-    height: 40rem;
-    margin-left: -41%;
-    color: black;
-    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-}
-
-.familia {
-    width: 35rem;
-    height: 40rem;
-    margin-left: -90%;
-    color: black;
-    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
-}
-
-
-/*
-.imagens {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr); 
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-    align-items: center;
-}
-
-.imagens figure {
-    text-align: center;
-    margin: 0;
-}
-
-.imagens img {
-    width: 250px;
-    height: auto;
-    border-radius: 20px;
-}
-
-.imagens figcaption {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #555;
-}
-*/
-
-.carrosmaisbuscados{
-    justify-content: center;
-    display: flex;
-}
-
-.card-carro{
-    background-color: rgb(23, 20, 20);
-    height: auto;
-    padding: 10px;
-    width: 300px;
-    text-align: center;
-    margin-left: 13px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.card-carro img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-
-.noticias-container {
-    justify-content: center;
-    display: flex;
-}
-
-.noticias h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #d3d3d3;
-}
-
-.noticias {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.noticia {
-    background-color: #444;
-    border-radius: 10px;
-    overflow: hidden;
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-}
-
-.noticia img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.descricao {
-    padding: 15px;
-}
-
-.seubolso {
-    font-size: 0.9em;
-    color: #ff5e57; 
-    margin: 0 0 5px;
-}
-
-.descricao h3 {
-    margin: 0 0 10px;
-    font-size: 1.2em;
-    color: #fff;
-}
-
-.autor {
-    font-size: 0.8em;
-    color: #bbb;
-}
-
-.category{
-    height: 300px ;
-    width: 250px;
-    background-size: cover;
-    background-position: center;
-}
-p.card-text {
-    font-size: 2rem;
-}
-.h1-category{
-    margin-left: 200px;
-}
-.h1-popular{
-    margin-left: 200px;
-}
-
-.buttons{ 
-    margin-left: 15%;
-    margin-top: 2%;
-}
-
-
-
-

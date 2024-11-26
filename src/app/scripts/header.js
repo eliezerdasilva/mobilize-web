@@ -6,13 +6,50 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isLoggedIn) {
         // Mostrar o menu "Perfil" se o usuário estiver logado
         authButton.innerHTML = `
-        <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <button class="btn perfil-btn" type="button" id="dropdownMenu2">
             Perfil
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><button class="dropdown-item" id="meusDados" type="button">Meus Dados</button></li>
-            <li><button class="dropdown-item" id="logout" type="button">Logout</button></li>
-        </ul>`;
+        </button> 
+        <button class="btn meus-dados-btn" type="button" id="meusDados">
+            Meus Dados
+        </button> 
+        <button class="btn logout-btn" type="button" id="logout">
+            Logout
+        </button> 
+    `;
+        //Estilização dos buttons 
+        document.getElementById("dropdownMenu2").style.cssText = `
+        color: white;
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        `;
+
+        document.getElementById("meusDados").style.cssText = `
+        color: white;
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        `;
+
+        document.getElementById("logout").style.cssText = `
+        color: white;
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        `;
 
         // Adicionar evento de logout
         document.getElementById("logout").addEventListener("click", () => {

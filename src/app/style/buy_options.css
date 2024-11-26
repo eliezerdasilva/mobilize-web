@@ -1,14 +1,18 @@
-body, h1, h2, h3, p, ul, li, a, input, select {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+
 }
+
 
 .container{
     padding-inline: 32px;
-    max-width: 1280px;
+    max-width: 2200px;
     margin-inline: auto;
+    
     
 }
 
@@ -29,12 +33,6 @@ nav{
     line-height: 0;
     padding-block: 20px 20px;
 }
-.msg{
-    display: flex;
-    height: 100vh;
-    width: 900px;
-    height: 300px;
-}
 
 nav ul{
     list-style: none;
@@ -49,7 +47,7 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+header a:hover{
     color: red;
 }
 
@@ -88,19 +86,17 @@ a:hover{
 .menu:hover .dropdown-content {
     display: block;
 }
-
+/*
 #options{
-    width: 250px;
-    height: 50px;
+    width: 200px;
+    height: 30px;
     border-radius: 10px;
-    margin-left: 500px;
+    margin-left: 700px;
     margin-bottom: 10px;
     background-color: white;
-    
-
 }
 
-
+*/
 
 nav ul {
     display: flex;
@@ -179,14 +175,14 @@ main {
 
   .car-card {
     display: flex;
-    flex-direction: column; /* Elementos empilhados verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    flex-direction: column; /* Elementos empilhados verticalmente;define a direção principal do layout flexível, organizando os itens do contêiner flexível em uma coluna vertical (em vez de uma linha horizontal, que é o padrão). */ 
+    align-items: center; 
     background-color: #f6f6f6;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
     width: 200px;
     height: 400px; /* Define uma largura fixa ou ajustável */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para destaque */
@@ -246,26 +242,23 @@ main {
 
 .btn:hover {
     background-color: #555;
+    color: red;
 }
 
 .car-listing {
-    
     display: flex;
+    flex-wrap:wrap ; /* é usado para permitir que os itens flexíveis "quebrem" para uma nova linha quando o espaço disponível na linha principal for insuficiente para acomodá-los.*/
+    width: 75%;
+    padding-block: 32px;
     gap: 1rem;
     margin-left: 20px;
-    height: 100vh;
-    width: 900px;
-    height: 300px;
     h2{
-       display: flex;
-       width: 800px;
+        margin-top: 60px;
     }
 }
 
 
-.central{
-    display: inline;
-}
+
 
 .row{
 	display: flex;
@@ -344,5 +337,3 @@ ul{
     width: 100%;
 }
 }
-
-
