@@ -12,7 +12,7 @@ function renderCarros(carros) {
     carList.innerHTML = "<p>Nenhum carro encontrado para esta categoria.</p>";
     return;
   }
-
+  console.log(carros);
   carros.forEach((carro) => {
     const card = `
             <div class="col-lg-4 col-md-6 mb-4">
@@ -29,7 +29,7 @@ function renderCarros(carros) {
     carList.innerHTML += card;
   });
 }
-
+// funcao sem funcao
 function carregarCarrosNaPaginaResultados() {
   const carrosFiltrados =
     JSON.parse(localStorage.getItem("carrosFiltrados")) || [];
@@ -53,35 +53,44 @@ function carregarCarros() {
     });
 }
 document.addEventListener("DOMContentLoaded", async function () {
+
   const urlParams = new URLSearchParams(window.location.search);
   const categoria = urlParams.get("categoria");
- 
-  const carros = await carregarCarros();
+  const marca = urlParams.get("marca");
   
+  const carros = await carregarCarros();
+
   let carrosFiltrados = [];
 
-  // Filtra os carros com base na categoria
+ 
   if (categoria === "Carros Usados") {
     carrosFiltrados = carros.filter(carro => carro.estado.toLowerCase() === "usado" && carro.tipo === "carro");
+    renderCarros(carrosFiltrados)
   } else if (categoria === "Carros Novos") {
     carrosFiltrados = carros.filter(carro => carro.estado.toLowerCase() === "novo" && carro.tipo === "carro");
+    renderCarros(carrosFiltrados)
   } else if (categoria === "Motos Usadas") {
     carrosFiltrados = carros.filter(carro => carro.estado.toLowerCase() === "usado" && carro.tipo === "moto");
+    renderCarros(carrosFiltrados)
   } else if (categoria === "Motos Novas") {
     carrosFiltrados = carros.filter(carro => carro.estado.toLowerCase() === "novo" && carro.tipo === "moto");
-    
+    renderCarros(carrosFiltrados)
   } else {
-    if (categoria === null) {
-      document.addEventListener(
-        "DOMContentLoaded",
-        carregarCarrosNaPaginaResultados
-      );
-      console.log("Categoria não selecionada");
+    if (categoria === null && marca !== null) {
+     renderMarca(marca);
     } else {
-      console.log("Categoria selecionada:", categoria);
-      renderMarca(categoria);
-      console.log("Renderizando marca:", categoria);
+      const carrosFiltradosString = localStorage.getItem('carrosFiltrados');
+      if (carrosFiltradosString) {
+        const carrosFiltrados = JSON.parse(carrosFiltradosString);
+        renderCarros(carrosFiltrados);
+      }
+
+    ;
     }
   }
-  renderCarros(carrosFiltrados);
+  
+});
+
+window.addEventListener('beforeunload', () => {
+  localStorage.removeItem('carrosFiltrados');
 });

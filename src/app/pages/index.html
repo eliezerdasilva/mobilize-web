@@ -91,7 +91,7 @@
 
 
 <main>
-  <section class="container">  <!--BARRA DE PESQUISA-->
+  <section class="container">  
   <div id="search_bar">
       <form action="">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -101,7 +101,7 @@
   </div>
   </section>
 
-  <section class="container"> <!--IMAGEM PRINCIPAL -->
+  <section class="container"> 
   <div id="about_us"> 
   </div>
 
@@ -110,7 +110,7 @@
   </section>
   
   <section>
-      <div class="bg-surface-color"> <!--MOSTRAR VANTAGENS DO SITE-->
+      <div class="bg-surface-color"> 
   <section class="container">
       <h1 style="padding-block: 30px; font-size: 35px;">O Que Podemos te Oferecer?</h1>
       <div id="advantages">
@@ -172,40 +172,48 @@
       <section class="container">
           <div class="automobile_brands">
               <h1>Explore & Escolha a <strong style="color: red;"> Melhor Marca de Automovéis</strong></h1>
-              <a href="#">Ver todas</a>
+             
               <section class="container"> 
 
                   <div class="emphasis">
-                      <div class="card_brand">
-                          <div class="card-image car1"></div>
-                          <div class="inside-card">
-                              <h2>Audi</h2>
-                          </div>
-                      </div>
-                      <div class="card_brand">
-                          <div class="card-image car2"></div>
-                          <div class="inside-card">
-                              <h2>Audi</h2>
-                          </div>
-                      </div>
-                      <div class="card_brand">
-                          <div class="card-image car3"></div>
-                          <div class="inside-card">
-                              <h2>Audi</h2>
-                          </div>
-                      </div>
-                      <div class="card_brand">
-                          <div class="card-image car4"></div>
-                          <div class="inside-card">
-                              <h2>Audi</h2>
-                          </div>
-                      </div>
-                      <div class="card_brand">
-                          <div class="card-image car5"></div>
-                          <div class="inside-card">
-                              <h2>Audi</h2>
-                          </div>
-                      </div>
+                     
+                    <div class="card_brand" onclick="redirectToModel(this)">
+                        <div class="card-image car2"></div>
+                        <div class="inside-card">
+                            <h2>Fiat</h2>
+                        </div>
+                    </div>
+                    <div class="card_brand" onclick="redirectToModel(this)">
+                        <div class="card-image car2"></div>
+                        <div class="inside-card">
+                            <h2>Renault</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="card_brand" onclick="redirectToModel(this)">
+                        <div class="card-image car2"></div>
+                        <div class="inside-card">
+                            <h2>Tesla</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="card_brand" onclick="redirectToModel(this)">
+                        <div class="card-image car2"></div>
+                        <div class="inside-card">
+                            <h2>Toyota</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="card_brand" onclick="redirectToModel(this)">
+                        <div class="card-image car2"></div>
+                        <div class="inside-card">
+                            <h2>Ford</h2>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                         
                   </div>
                   
               
@@ -217,82 +225,80 @@
       </section>
   </div>
 
-  <section class="container">    <!--TIPOS DE CARRO/categorias-->
+  <section class="container">   
       <h1 style="font-size: 35px; gap: 12px;">Explore Nossa Seleção de <span style="color:red">Estilos e Classes de Automóveis</span>.</h1>            
-      
-      <a href="#">
-
-          <div class="car-category">
-              <figure>
+      <div class="car-category">
+            <a href="#">         
+              <figure class="category">
                   <img  src="/src/assets/images/type_sedan.png" alt="">
-                  <figcaption>Sedan's</figcaption>
+                  <figcaption data-categoria="sedan">Sedan's</figcaption>
               </figure>
-          </a>
+            </a>
 
-          <a href="#">
+          <a href="#" class="category">
               <figure>
                   <img src="/src/assets/images/type_compact.png" alt="">
-                  <figcaption>Compactos</figcaption>
+                  <figcaption data-categoria="compacto">Compactos</figcaption>
               </figure>
           </a>
-          <a href="#">
+          <a href="#" class="category">
               <figure>
                   <img src="/src/assets/images/type_convertible.png" alt="">
-                  <figcaption>Conversíveis</figcaption>
+                  <figcaption data-categoria="conversiveis" >Conversíveis</figcaption>
               </figure>
           </a>
-          <a href="#">
+          <a href="#" class="category">
               <figure>
                   <img src="/src/assets/images/type_suv.png" alt="">
-                  <figcaption>SUV's</figcaption>
+                  <figcaption data-categoria="suv">SUV's</figcaption>
               </figure>
           </a>
-          <a href="#">
-              <figure>
+          <a href="#" class="category">
+              <figure class="category">
                   <img src="/src/assets/images/type_crossover.png" alt="">
-                  <figcaption>Crossover</figcaption>
+                  <figcaption data-categoria="crossover">Crossover</figcaption>
               </figure>
           </a>
           <a href="#">
-              <figure>
+              <figure class="category">
                   <img src="/src/assets/images/type_wagon.png" alt="">
-                  <figcaption>Wagon's</figcaption>
-              </figure>
+                  <figcaption data-categoria="hat">Hat</figcaption>
+              </figure >
           </a>
           <a href="#">
-              <figure>
+              <figure class="category">
                   <img src="/src/assets/images/type_sports.png" alt="">
-                  <figcaption>Esportivos</figcaption>
+                  <figcaption data-categoria="esportivos">Esportivos</figcaption>
               </figure>
           </a>
           <a href="#">
-              <figure>
+              <figure class="category">
                   <img src="/src/assets/images/type_pickup.png" alt="">
-                  <figcaption>Pickup's</figcaption>
+                  <figcaption data-categoria="picapes">Pickup's</figcaption>
               </figure>
           </a>
-          <a href="#">
+          <a href="#" class="category">
               <figure>
                   <img src="/src/assets/images/type_family.png" alt="">
-                  <figcaption>Família</figcaption>
+                  <figcaption data-categoria="van">Família</figcaption>
               </figure>
           </a>
-          <a href="#">
+          <a href="#" class="category">
               <figure>
                   <img src="/src/assets/images/type_coupe.png" alt="">
-                  <figcaption>Coupe</figcaption>
+                  <figcaption data-categoria="coupe">Coupe</figcaption>
               </figure>
           </a>
-          <a href="#">
+          <a href="#" class="category">
               <figure>
                   <img src="/src/assets/images/type_eletric.png" alt="">
-                  <figcaption>Elétricos</figcaption>
+                  <figcaption data-categoria="eletrico">Elétricos</figcaption>
               </figure>
           </a>
-          <a href="#">
+          <a href="#" class="category">
               <figure>
                   <img src="/src/assets/images/type_luxury.png" alt="">
-                  <figcaption>Luxo</figcaption>
+                  <figcaption data-categoria="luxo">Luxo</figcaption>
               </figure>
           </a>
           </div>

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const isLoggedIn = localStorage.getItem("loggedInUser");
 
     if (isLoggedIn) {
-        // Mostrar o menu "Perfil" se o usuário estiver logado
+      
         authButton.innerHTML = `
 
         <button class="btn perfil-btn" type="button" id="dropdownMenu2">
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Logout
         </button> 
     `;
-        //Estilização dos buttons 
+        
         document.getElementById("dropdownMenu2").style.cssText = `
         color: white;
         background-color: #007bff;
