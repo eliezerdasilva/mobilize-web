@@ -15,7 +15,15 @@
     
     <script src="/src/app/scripts/header.js"></script>
     <script src="https://kit.fontawesome.com/0319e9b74e.js" crossorigin="anonymous"></script>
-
+    <style>
+        .product-price{
+            display: inline;
+            margin: 0px;
+        }
+        .product-price p {
+            margin-bottom: -15px;
+        }
+    </style>
 </head>
 <body>
 
@@ -83,74 +91,51 @@
                 <div class="col-6">
                     <div class="product-image">
                         <div class="product-image-main">
-                            <img src="/src/assets/images/camaro.jpg" alt="" id="product-main-image">
+                            <img  id="foto01"  alt="" id="product-main-image">
                         </div>
                         <div class="product-image-slider">
-                            <img src="/src/assets/images/bmw.jpg" alt=""  class="image-list">
+                          
+                            <!--
                             <img src="/src/assets/images/Carroeletrico.jpeg" alt=""  class="image-list">
                             <img src="/src/assets/images/audi.jpg" alt=""  class="image-list">
-                            <img src="/src/assets/images/type_eletric.png" alt=""  class="image-list">
+                            <img src="/src/assets/images/type_eletric.png" alt=""  class="image-list">--->
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="caminho">
-                        <span><a href="index.html">Home</a></span>
-                        <span><a href="buy_options.html">Comprar</a></span>
-                        <span class="active">Audi</span>
+                      <span><a href="index.html">Home</a></span>
+                      <span><a href="buy_options.html">Comprar</a></span>
+                      <span class="active"></span>
                     </div>
-
+                  
                     <div class="product">
-                        <div class="product-title">
-                            <h2>Audi R8</h2>
-                        </div>
-                        <div class="product-rating">
-                            <span><i class="bx bxs-star"></i></span>
-                            <span><i class="bx bxs-star"></i></span>
-                            <span><i class="bx bxs-star"></i></span>
-                            <span><i class="bx bxs-star"></i></span>
-                            <span><i class="bx bxs-star"></i></span>
-                            <span class="review">(4.7)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="offer-price">$599.900</span>
-                            <span class="sale-price">$719.000</span>
-                        </div>
-
-                        <div class="product-details">
-                            <h3>Descrição</h3>
-                            <p>Blindado CART com vidros AGP i-B33, Cor Bianco, Interior total couro bicolor Roso/Nero, Pacote interno interno em carbono, Motor biturbo com 430cv, Volante multifuncional com Paddle Shift, Bancos em couro com ajuste elétrico, aquecimento, ventilação e pacote de memória, Emblema Maserati nos encostos de cabeça, Teto solar panorâmico, Sistema de som Harman/Kardon, Faróis full LED, Escapamento esportivo com seletor de ronco, Rodas Anteo Black, Suspensão adaptativa. Entregamos em todo Brasil! Outros Opcionais: Comando de áudio no volante, Controle de estabilidade.</p></div>
-                        
-                            <section class="send_msg">
-                                <div class="card">
-
-                                        <form class="inside_card_formulario">
-                                            <label for="">Envie uma mensagem ao vendedor</label>
-                                            <input type="text" name="" id="user_input" placeholder=" Nome*" required>
-                        
-                                            <input type="email" id="user_input" placeholder=" E-mail*" required>
-                        
-                                            <input type="tel" id="user_input" placeholder=" Telefone*" required>
-                        
-                                            <input type="text" id="user_textarea" placeholder="Olá, tenho interesse no veículo."></input>
-                        
-                                            
-                                            <input type="submit" id="submit_form" value="Enviar Mensagem">
-                                        </form>
-                                        <a href="#" id="denunciar"><i class="fa-solid fa-flag"></i>Denunciar este anúncio</a>
-                                    </div>
-                              </section>   
-
- 
-                        <span class="divisor"></span>
-
-                        <div class="product-btn-group">
-                            <div class="button buy-now"><i class="fa-solid fa-money-check-dollar"></i> Ver Parcelas</div>
-                            <div class="button add-cart"><i class='bx bxs-cart' ></i> Adicionar ao Carrinho</div>
-                            <div class="button heart"><i class='bx bxs-heart' ></i> Adicionar aos Favoritos</div>
-                        </div>
+                      <div class="product-title">
+                        <h2 id="modelo"></h2>
+                      </div>
+                      <div class="product-rating">
+                        <span><i class="bx bxs-star"></i></span>
+                        <span><i class="bx bxs-star"></i></span>
+                        <span><i class="bx bxs-star"></i></span>
+                        <span><i class="bx bxs-star"></i></span>
+                        <span><i class="bx bxs-star"></i></span>
+                        <span class="review">(4.7)</span>
+                      </div>
+                      <div class="product-price">
+                        <p>Preço</p>
+                        <span class="offer-price" id="preco">R$ 0,00</span>
+                      </div>
+                      
+                      
+                      
+                  
+                      <div class="product-details">
+                        <h3>Descrição</h3>
+                        <p>Descrição do carro será preenchida aqui.</p>
+                      </div>
                     </div>
-                </div>
+                  </div>
+                  
             </div>
         </div>
         </div>
@@ -216,6 +201,7 @@
       </footer>
 
       <script src="/src/app/scripts/scriptBuyPage.js"></script>
+      <script src="/src/app/scripts/scriptBuy.js"></script>
 
 </body>
 </html>

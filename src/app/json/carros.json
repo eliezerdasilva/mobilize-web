@@ -8,8 +8,11 @@
       "combustivel": "Gasolina",
       "categoria": "sedans",
       "estado": "novo",
-      "tipo":"carro"
-
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     }
     ,
     {
@@ -20,7 +23,11 @@
       "combustivel": "Híbrido",
       "categoria": "sedans",
       "estado": "novo",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+     "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     },
     {
       "modelo": "Mustang",
@@ -30,7 +37,11 @@
       "combustivel": "Gasolina",
       "categoria": "Esportivos",
       "estado": "usado",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     },
     {
       "modelo": "Model S",
@@ -40,7 +51,11 @@
       "combustivel": "Elétrico",
       "categoria": "elétricos",
       "estado": "usado",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     },
     {
       "modelo": "Onix",
@@ -50,7 +65,11 @@
       "combustivel": "Gasolina",
       "categoria": "hats",
       "estado": "usado",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     },
     {
       "modelo": "Civic",
@@ -60,7 +79,11 @@
       "combustivel": "Gasolina",
       "categoria": "sedans",
       "estado": "novo",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     },
     {
       "modelo": "Corolla",
@@ -70,7 +93,11 @@
       "combustivel": "Híbrido",
       "categoria": "sedans",
       "estado": "usado",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     },
     {
       "modelo": "Mustang",
@@ -80,7 +107,12 @@
       "combustivel": "Gasolina",
       "categoria": "Esportivos",
       "estado": "novo",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
+      
     },
     {
       "modelo": "Model S",
@@ -90,7 +122,11 @@
       "combustivel": "Elétrico",
       "categoria": "elétricos",
       "estado": "novo",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+     "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     },
     {
       "modelo": "Onix",
@@ -100,7 +136,11 @@
       "combustivel": "Flex",
       "categoria": "hats",
       "estado": "usado",
-      "tipo":"carro"
+      "tipo":"carro",
+      "preco": "300.0",
+      "km": "350.0",
+      "cambio": "Automatico",
+      "cidade": "Gaspar"
     }
   ]
 }
