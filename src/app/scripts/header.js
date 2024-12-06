@@ -6,35 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isLoggedIn) {
       
         authButton.innerHTML = `
-
-       
+     
         <button class="btn logout-btn" type="button" id="logout">
             Logout
         </button> 
     `;
         
-        document.getElementById("dropdownMenu2").style.cssText = `
-        color: white;
-        background-color: #007bff;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        `;
-
-        document.getElementById("meusDados").style.cssText = `
-        color: white;
-        background-color: #007bff;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        `;
-
+       
         document.getElementById("logout").style.cssText = `
         color: white;
         background-color: #007bff;
@@ -48,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Adicionar evento de logout
         document.getElementById("logout").addEventListener("click", () => {
+            console.log("sss")
             localStorage.removeItem("loggedInUser");
             window.location.reload();
         });
@@ -56,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         
     } else {
-        // Mostrar o botão "Entrar" se o usuário não estiver logado
+       
         authButton.innerHTML = `<a href="login.html" class="btn btn-primary">Entrar</a>`;
     }
 });
