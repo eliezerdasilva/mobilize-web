@@ -7,12 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
         authButton.innerHTML = `
 
-        <button class="btn perfil-btn" type="button" id="dropdownMenu2">
-            Perfil
-        </button> 
-        <button class="btn meus-dados-btn" type="button" id="meusDados">
-            Meus Dados
-        </button> 
+       
         <button class="btn logout-btn" type="button" id="logout">
             Logout
         </button> 

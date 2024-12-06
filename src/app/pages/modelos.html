@@ -21,48 +21,67 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
   <script src="/src/app/scripts/scriptIndex.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="/src/app/scripts/scriptModelos.js"></script>
   <script src="/src/app/scripts/header.js"></script>  
   
+    <link rel="stylesheet" href="/src/app/style/header.css">
+    <link rel="stylesheet" href="/src/app/style/buy_options.css">
+    <script src="https://kit.fontawesome.com/0319e9b74e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/app/style/foot.css">
+  <link rel="stylesheet" href="/src/app/style/modelo.css">
 </head>
 <body>
-  <header class="w-100 bg-light  fixed-top">
-    <div class="d-flex justify-content-around ">
-      <a href="index.html">
-        <img src="/src/assets/images/logo_mob.png" alt="" width="100" height="95" style="border-radius: 50%" />
-      </a>
-      <nav class="navegation blockquote bg-light mb-0">
-        <ul class="nav ms-auto">
-            <li class="nav-item">
-              <a   href="home.html" ></a> <button class="dropdown-item" type="button">Home</button></a>
-            </li>
-            <li class="nav-item">
-                <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Comprar
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <button class="dropdown-item compra" type="button">Carros Usados</button>
-                    <button class="dropdown-item compra" type="button">Carros Novos</button>
-                    <button class="dropdown-item compra" type="button">Motos Usadas</button>
-                    <button class="dropdown-item compra" type="button">Motos Novas</button>
+  <header>
+    <div class="bg-surface-color"> 
+    <nav class="containerHeader">
+    <a href="index.html" id="logo">
+        <img id="logo_mob"  src="/src/assets/images/logo_mob.png" alt="Logo">
+    </a>
+
+    <ul id="primary-menu">        
+        <div class="menu">
+                <a href="#">Comprar</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Usados</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Novos</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Usadas</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Novas</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Marcas
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item marcas" type="button">Ford</button>
-                    <button class="dropdown-item marcas" type="button">BMW</button>
-                    <button class="dropdown-item marcas" type="button">Fiat</button>
-                    <button class="dropdown-item marcas" type="button">Renault</button>
+            </div> 
+        
+        <div class="menu">
+            <a href="#">Vender</a>
+            <div class="dropdown-content">
+              <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-car-on"></i> Vender Carro</a>
+                <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Vender Moto</a>
+            </div>
+        </div> 
+
+        <div class="menu">
+            <a href="buy_options.html">Pesquisar</a>
+           
+        </div> 
+
+
+
+        <div class="menu">
+            <a href="#">Ajuda</a>
+            <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-globe"></i> Duvidas Frequentes</a>
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-phone"></i> Contato</a>
                 </div>
+            </div> 
+           
+            <li class="nav-item">
+              <li class="nav-item" id="auth-button">
+              </li>
             </li>
-            <li class="nav-item" id="auth-button">
-                <!-- Aqui vai o conteúdo dinâmico do botão, como 'Entrar' ou 'Perfil', dependendo do estado de login -->
-            </li>
+
         </ul>
     </nav>
+    </div>
+</header> 
 
 
     
@@ -70,11 +89,51 @@
     </div>
     <div class="container mt-5">
       <div class="row pt-5" id="car-list">
-        <!-- Lista de carros aqui -->
+      
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Serviços</h4>
+                  <ul>
+                      <li><a href="index.html">Mobilize</a></li>
+                  </ul>
+              </div>
+             
+              <div class="footer-col">
+                  <h4>Veiculos</h4>
+                  <ul>
+                      <li><a href="modelos.html">Clique aqui</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4>Institucional</h4>
+                  <ul>
+                      <li><a href="#">Código de Defesa do Consumidor</a></li>
+                      <li><a href="#">LGPD</a></li>
+                      <li><a href="#">Termos de Uso e Política de Privacidade</a></li>
+                      <li><a href="#">Relatorio de Transparência</a></li>
+                      <li><a href="#">Gerenciamento de Cookies</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Siga-nos</h4>
+                  <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+ </footer>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 
 .automobile_brands{
-    height: 800px;
+    height: 600px;
 
     .emphasis{
         display: flex;
@@ -18,31 +18,36 @@
     
     }
     .card-image{
-        background-color: red;
+        background-color: rgb(255, 255, 255);
         height: 170px;
         margin-bottom: 15px;
        
     }
     
     .car1{
-        background-image: url(/src/assets/images/vecteezy_audi-logo-png-audi-icon-transparent-png_19766236.png);
+        background-image: url(/src/assets/images/vecteezy_bmw-transparent-png-bmw-free-png_19956127.png);
     }
     
     .car2{
-        background-image: url(/src/assets/images/vecteezy_bmw-transparent-png-bmw-free-png_19956127.png);
+        background-image: url(/src/assets/images/RENAULT.webp);
     }
     
     .car3{
-        background-image: url(/src/assets/images/vecteezy_ford-transparent-png-ford-free-png_19909413.png);
+        background-image: url(/src/assets/images/BYD.webp);
     }
     .car4{
-        background-image: url(/src/assets/images/vecteezy_mercedes-benz-logos-popular-brands-of-cars-isolated-on_22498229.png);
+        background-image: url(/src/assets/images/TOYOTA.png);
     }
     
     .car5{
-        background-image: url(/src/assets/images/vecteezy_bmw-transparent-png-bmw-free-png_19956127.png);
+        background-image: url(/src/assets/images/vecteezy_ford-transparent-png-ford-free-png_19909413.png);
     }
-
+    .car6{
+        background-image: url(/src/assets/images/vecteezy_audi-logo-png-audi-icon-transparent-png_19766236.png);
+    }
+    .car7{
+        background-image: url(/src/assets/images/vecteezy_mercedes-benz-logos-popular-brands-of-cars-isolated-on_22498229.png)
+    }
     h1{
         color: white;
         padding-block: 58px;
@@ -75,3 +80,4 @@
     
 
 
+}

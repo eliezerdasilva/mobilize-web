@@ -14,7 +14,7 @@ if (window.location.pathname.includes("login.html")) {
         const user = users.find(user => user.email === username && user.senha === password);
 
         if (user) {
-            console.log("entrei")
+           
             localStorage.setItem("loggedInUser", username);
             window.location.href = "index.html";
         } else {

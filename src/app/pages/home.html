@@ -25,45 +25,55 @@
     <title>Home</title>
 </head>
 <body>
-    <header class="w-100 bg-light  fixed-top">
-        <div class="d-flex justify-content-around ">
-          <a href="index.html">
-            <img src="/src/assets/images/logo_mob.png" alt="" width="100" height="95" style="border-radius: 50%" />
-          </a>
-          <nav class="navegation blockquote bg-light  mb-0">
-            <ul class="nav ms-auto">
-              <li class="nav-item">
-                <a   href="home.html" ></a> <button class="dropdown-item" type="button">Home</button></a>
-              </li>
-              <li class="nav-item">
-                <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Comprar
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item compra" type="button">Carros Usados</button>
-                  <button class="dropdown-item compra" type="button">Carros Novos</button>
-                  <button class="dropdown-item compra" type="button">Motos Usadas</button>
-                  <button class="dropdown-item compra" type="button">Motos Novas</button>
+  <header>
+    <div class="bg-surface-color"> 
+    <nav class="container">
+    <a href="#" id="logo">
+        <img id="logo_mob"  src="/src/assets/images/logo_mob.png" alt="Logo">
+    </a>
+
+    <ul id="primary-menu">        
+        <div class="menu">
+                <a href="#">Comprar</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Usados</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Novos</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Usadas</a>
+                  <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Novas</a>
                 </div>
-              </li>
-              <li class="nav-item">
-                <button class="btn bg-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Marcas
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item marcas" type="button">Ford</button>
-                  <button class="dropdown-item marcas" type="button">BMW</button>
-                  <button class="dropdown-item marcas" type="button">Fiat</button>
-                  <button class="dropdown-item marcas" type="button">Renault</button>
+            </div> 
+        
+        <div class="menu">
+            <a href="#">Vender</a>
+            <div class="dropdown-content">
+              <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-car-on"></i> Vender Carro</a>
+                <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Vender Moto</a>
+            </div>
+        </div> 
+
+        <div class="menu">
+            <a href="buy_options.html">Pesquisar</a>
+           
+        </div> 
+
+
+
+        <div class="menu">
+            <a href="#">Ajuda</a>
+            <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-globe"></i> Duvidas Frequentes</a>
+                <a href="#" class="dropdown-item compra"><i class="fa-solid fa-phone"></i> Contato</a>
                 </div>
+            </div> 
+           
+            <li class="nav-item">
+              <li class="nav-item" id="auth-button">
               </li>
-              <li class="nav-item">
-                <li class="nav-item" id="auth-button">
-              </li>
-              </li>
-            </ul>
-          </nav>
-    
-      </header>
+            </li>
+
+        </ul>
+    </nav>
+    </div>
+</header> 
 </body>
 </html>
