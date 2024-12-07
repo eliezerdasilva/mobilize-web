@@ -1,0 +1,47 @@
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.filters {
+    width: 50%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters input{
+    width: 98%;
+    height: 30px;
+
+  }
+
+  .filters h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .filters label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .filters select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+#text_area{
+    height: 100px;
+}
+
+#submit_form{
+    width: 250px;
+    margin: 10px;
+    
+}
