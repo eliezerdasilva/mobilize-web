@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="price">${carro.preco}</div>
             <div class="year-km">KM ${carro.km}</div>
             <div class="localization"><i class="fa-solid fa-location-dot"></i> ${carro.cidade}</div>
-            <button class="btn view-details" data-index="${index}">Ver parcelas</button>
+            <button class="btn view-details" data-index="${index}">Ver</button>
           </div>
         </div>
       `;

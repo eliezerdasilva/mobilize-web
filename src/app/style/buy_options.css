@@ -8,15 +8,13 @@
 }
 
 
-.container{
-    padding-inline: 32px;
- 
-    margin-inline: auto;
-    display: inline;
-    
-    
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px; /* Espaçamento entre os elementos */
+  padding: 20px; /* Adicionar espaço interno */
 }
-
 #logo_mob{
     width: 80px;
     height: 80px;
@@ -146,10 +144,19 @@ main {
 
 
 .filters {
-    width: 20%;
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 8px;
+  flex: 0 0 300px; /* Define a largura fixa para os filtros */
+  background-color: #f9f9f9; /* Cor de fundo para distinguir */
+  padding: 20px; /* Espaço interno dos filtros */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.central {
+  flex: 1; /* Faz a seção central ocupar o espaço restante */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 

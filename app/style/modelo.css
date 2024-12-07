@@ -49,15 +49,4 @@ body {
     color: white;
   }
   
-  .btn-primary {
-    background-color: rgb(46, 45, 55);
-    border: none;
-    padding: 8px 16px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: red;
-  }
-  
+

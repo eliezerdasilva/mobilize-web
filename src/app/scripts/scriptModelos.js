@@ -12,17 +12,21 @@ function renderCarros(carros) {
     carList.innerHTML = "<p>Nenhum carro encontrado para esta categoria.</p>";
     return;
   }
-  console.log(carros);
+  
   carros.forEach((carro) => {
     const card = `
           <div class="car-card">
-  <img class="card-img-top" src="${carro.foto}" alt="Imagem de ${carro.modelo}">
-  <div class="card-body">
-    <h5 class="card-title">${carro.modelo} (${carro.ano})</h5>
-    <p class="card-text">Marca: ${carro.marca} <br> Combustível: ${carro.combustivel}</p>
-    <a href="#" class="btn btn-primary">Visitar</a>
-  </div>
-</div>        `;
+          <img src="${carro.foto}" alt="Imagem de ${carro.modelo}">
+          <div class="car-info">
+            <div class="car-name"> ${carro.marca} ${carro.modelo}</div>
+            <div class="car-details">${carro.info}</div>
+            <div class="price">R$ ${carro.preco}</div>
+            <div class="year-km">${carro.ano} • ${carro.km} km</div>
+           <div class="localization"><i class="fa-solid fa-location-dot"></i> ${carro.cidade}</div>
+
+            <a href="" class="btn-mostrar btn">Ver parcelas</a>
+         </div>
+        </div>       `;
     carList.innerHTML += card;
   });
 }
@@ -90,4 +94,25 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 window.addEventListener('beforeunload', () => {
   localStorage.removeItem('carrosFiltrados');
+});
+
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('btn-mostrar')) {
+      event.preventDefault();
+
+      const carCard = event.target.closest('.car-card');
+      const carData = {
+          foto: carCard.querySelector('img').src,
+          marca: carCard.querySelector('.car-name').textContent.split(' ')[0],
+          modelo: carCard.querySelector('.car-name').textContent.split(' ').slice(1).join(' '),
+          info: carCard.querySelector('.car-details').textContent,
+          preco: carCard.querySelector('.price').textContent,
+          ano: carCard.querySelector('.year-km').textContent.split(' • ')[0],
+          km: carCard.querySelector('.year-km').textContent.split(' • ')[1].replace(' km', ''),
+          cidade: carCard.querySelector('.localization').textContent.trim()
+      };
+
+      localStorage.setItem('selectedCar', JSON.stringify(carData));
+      window.location.href = 'buy.html';
+  }
 });

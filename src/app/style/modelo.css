@@ -3,61 +3,183 @@ body {
     padding: 20px;
   }
   
-  .container {
-    max-width: 1200px;
+  .containerModelo {
+    max-width: 1800px;
     margin: 0 auto;
   }
   
-  #car-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .car-card {
-    width: 300px;  /* Tamanho fixo do card */
+  .container.mt-5.listagem {
+    flex: 1; /* O container ocupa o espaço restante */
     background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}.car-card {
+  width: 300px; /* Largura padrão */
+  background-color: #fff; /* Fundo branco */
+  border: 1px solid #ddd; /* Borda fina e clara */
+  border-radius: 10px; /* Arredondar os cantos */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Garante que nada ultrapasse os limites */
+  margin: 10px; /* Espaçamento entre os cards */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animações */
+}
+
+.car-card:hover {
+  transform: translateY(-5px); /* Levanta o card ao passar o mouse */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.card-img-top {
+  width: 100%; /* A imagem ocupa toda a largura do card */
+  height: 200px; /* Altura fixa */
+  object-fit: cover; /* Ajusta a imagem sem distorção */
+  border-bottom: 1px solid #ddd; /* Linha separando imagem do corpo */
+}
+
+.card-body {
+  padding: 25px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.card-text {
+  font-size: 0.9rem; /* Tamanho menor para o texto */
+  color: #555; /* Cor suave */
+  margin-bottom: 15px; /* Espaçamento abaixo */
+}
+
+.btn-primary {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 50px; 
+  border: none; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: background-color 0.2s ease; 
+}
+
+
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Espaço entre os elementos */
+    padding: 20px;
+    align-items: flex-start; /* Alinhar os itens no topo */
+}
+
+.filters {
+    flex: 0 0 300px; /* Define uma largura fixa para os filtros */
+    background-color: #f9f9f9; /* Cor de fundo para diferenciar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.car-card {
+  width: 300px; /* Largura fixa para consistência */
+  background-color: #fff; /* Fundo branco */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Evita transbordo */
+  margin: 10px; /* Espaçamento entre cards */
+  display: flex;
+  flex-direction: column; /* Organiza o layout */
+  justify-content: space-between; /* Distribui os elementos */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animações */
+}
+
+.car-card:hover {
+  transform: translateY(-5px); /* Levanta o card ao passar o mouse */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.car-card img {
+  width: 100%; /* A imagem ocupa toda a largura do card */
+  height: 200px; /* Altura fixa para uniformidade */
+  object-fit: cover; /* Ajusta a imagem sem distorção */
+}
+.car-card {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center; 
+  width: 300px;
+  height: 550px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.car-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.car-details {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #e60000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.year-km {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.localization{
+  padding-block: 5px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+  color: red;
+}
+
+.car-listing {
+  display: flex;
+  flex-wrap:wrap ;
+  width: 80%;
+  padding-block: 32px;
+  gap: 1rem;
+  margin-left: 20px;
+  h2{
+      margin-top: 60px;
   }
-  
-  .car-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card-img-top {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 15px;
-  }
-  
-  .card-title {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .card-text {
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 8px 16px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
