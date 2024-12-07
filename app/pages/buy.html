@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilize.com</title>
+  
+    <link rel="stylesheet" href="/src/app/style/buy.css">
+    <link rel="stylesheet" href="/src/app/style/foot.css">
+    <link rel="stylesheet" href="/src/app/style/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Wendy+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+    <script src="/src/app/scripts/header.js"></script>
+    <script src="/src/app/scripts/scriptBuy.js"></script>
+    <script src="https://kit.fontawesome.com/0319e9b74e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="bg-surface-color"> 
+        <nav class="container">
+        <a href="#" id="logo">
+            <img id="logo_mob"  src="/src/assets/images/logo_mob.png" alt="Logo">
+        </a>
+    
+        <ul id="primary-menu">        
+            <div class="menu">
+                    <a href="#">Comprar</a>
+                    <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Usados</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Novos</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Usadas</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Novas</a>
+                    </div>
+                </div> 
+            
+            <div class="menu">
+                <a href="#">Vender</a>
+                <div class="dropdown-content">
+                  <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-car-on"></i> Vender Carro</a>
+                    <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Vender Moto</a>
+                </div>
+            </div> 
+    
+            <div class="menu">
+                <a href="#">Serviços</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-bell-concierge"></i> Mobilize Serviços</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-shield"></i> Seguro de Veículo</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-calendar-days"></i> Catálogo</a>
+                </div>
+            </div> 
+    
+    
+    
+            <div class="menu">
+                <a href="#">Ajuda</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-globe"></i> Duvidas Frequentes</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-phone"></i> Contato</a>
+                    </div>
+                </div> 
+               
+                <li class="nav-item">
+                  <li class="nav-item" id="auth-button">
+                  </li>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header> 
+    
+
+
+    <main>
+        <div class="containerb">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-6">
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <img src="" alt="" id="product-main-image">
+                        </div>
+                        <div class="product-image-slider">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="caminho">
+                        <span><a href="index.html">Home</a></span>
+                        <span><a href="buy_options.html">Comprar</a></span>
+                        <span class="active"></span>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-title">
+                            <h2></h2>
+                        </div>
+                        <div class="product-rating">
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span class="review">(4.7)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="offer-price"></span>
+                            <span class="sale-price"></span>
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Descrição</h3>
+                            <p></p>
+                            <section class="send_msg">
+                                <div class="card">
+
+                                        <form class="inside_card_formulario">
+                                            <label for="">Envie uma mensagem ao vendedor</label>
+                                            <input type="text" name="" id="user_input" placeholder=" Nome*" required>
+                        
+                                            <input type="email" id="user_input" placeholder=" E-mail*" required>
+                        
+                                            <input type="tel" id="user_input" placeholder=" Telefone*" required>
+                        
+                                            <input type="text" id="user_textarea" placeholder="Olá, tenho interesse no veículo."></input>
+                        
+                                            
+                                            <input type="submit" id="submit_form" value="Enviar Mensagem">
+                                        </form>
+                                        <a href="#" id="denunciar"><i class="fa-solid fa-flag"></i>Denunciar este anúncio</a>
+                                    </div>
+                              </section>   
+
+ 
+                        <span class="divisor"></span>
+
+                        <div class="product-btn-group">
+                            <div class="button buy-now"><i class="fa-solid fa-money-check-dollar"></i> Ver Parcelas</div>
+                            <div class="button add-cart"><i class='bx bxs-cart' ></i> Adicionar ao Carrinho</div>
+                            <div class="button heart"><i class='bx bxs-heart' ></i> Adicionar aos Favoritos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Mobilize Serviços</a></li>
+                        <li><a href="#">Tabela FIPE</a></li>
+                        <li><a href="#">Financiamento</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Seguro de Veículo</a></li>
+                        <li><a href="#">Multas e Débitos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Notícias MOB</h4>
+                    <ul>
+                        <li><a href="#">Portal</a></li>
+                        <li><a href="#">Últimas Notícias</a></li>
+                        <li><a href="#">Testes</a></li>
+                        <li><a href="#">Comparativos</a></li>
+                        <li><a href="#">Vídeos</a></li>
+                        <li><a href="#">Dicas</a></li>
+                    </ul>
+                </div>
+      
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Código de Defesa do Consumidor</a></li>
+                        <li><a href="#">LGPD</a></li>
+                        <li><a href="#">Termos de Uso e Política de Privacidade</a></li>
+                        <li><a href="#">Relatorio de Transparência</a></li>
+                        <li><a href="#">Gerenciamento de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+      
+            </div>
+        </div>
+      </footer>
+
+      <script src="/src/app/scripts/scriptBuyPage.js"></script>
+      <script src="/src/app/scripts/scriptBuy.js"></script>
+
+</body>
+</html>

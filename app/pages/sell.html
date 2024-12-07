@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Wendy+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/0319e9b74e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/app/style/sell.css">
+    <link rel="stylesheet" href="/src/app/style/nav.css">
+    <link rel="stylesheet" href="/src/app/style/style.css">
+    <link rel="stylesheet" href="/src/app/style/global.css">
+    <script src="/src/app/scripts/header.js"></script>
+    <link rel="stylesheet" href="/src/app/style/header.css">
+
+    <title>Mobilize.com</title>
+</head>
+<body>
+    
+    
+    <header>
+        <div class="bg-surface-color"> 
+        <nav class="container">
+        <a href="index.html" id="logo">
+            <img id="logo_mob"  src="/src/assets/images/logo_mob.png" alt="Logo">
+        </a>
+    
+        <ul id="primary-menu">        
+            <div class="menu">
+                    <a href="#">Comprar</a>
+                    <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                      <a href="buy_options.html" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Usados</a>
+                      <a href="buy_options.html" class="dropdown-item compra"><i class="fa-solid fa-car-side"></i> Carros Novos</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Usadas</a>
+                      <a href="#" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Motos Novas</a>
+                    </div>
+                </div> 
+            
+            <div class="menu">
+                <a href="#">Vender</a>
+                <div class="dropdown-content">
+                  <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-car-on"></i> Vender Carro</a>
+                    <a href="sell.html" class="dropdown-item compra"><i class="fa-solid fa-motorcycle"></i> Vender Moto</a>
+                </div>
+            </div> 
+    
+            <div class="menu">
+                <a href="buy_options.html">Pesquisar</a>
+               
+            </div> 
+    
+    
+    
+            <div class="menu">
+                <a href="#">Ajuda</a>
+                <div class="dropdown-content" aria-labelledby="dropdownMenu2">
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-globe"></i> Duvidas Frequentes</a>
+                    <a href="#" class="dropdown-item compra"><i class="fa-solid fa-phone"></i> Contato</a>
+                    </div>
+                </div> 
+               
+                <li class="nav-item">
+                  <li class="nav-item" id="auth-button">
+                  </li>
+                </li>
+    
+            </ul>
+        </nav>
+        </div>
+    </header> 
+    
+    <main>
+        <aside class="filters">
+            <form>
+                <h2>Formulário de Venda</h2>
+                <h3>Dados do proprietário</h3>
+                <label>Nome/Razão social </label>
+                <input type="text" placeholder=" Nome" name="" id="" required>
+
+                <label>Identidade</label>
+                <input type="text" placeholder=" Identidade" name="" id="" required>
+
+                <label>CPF</label>
+                <input type="text" placeholder=" CPF/CNPJ" name="" id="" required>
+
+                <label>Nacionalidade</label>
+                <input type="text" placeholder=" Nacionalidade" name="" id="" required>
+
+                <label> Naturalidade</label>
+                <input type="text" placeholder=" Naturalidade" required>
+
+                <label>Endereço</label>
+                <input type="text" placeholder=" Endereço" name="" id="" required>
+                <input type="text" placeholder=" n°" required>
+                <input type="text" placeholder=" Complemento">
+                <input type="text" placeholder=" Bairro" required>
+                <input type="text" placeholder=" Cidade" required>
+                <input type="text" placeholder=" UF" required>
+                <input type="text" placeholder=" CEP" name=""  id="" required>
+                
+                <label>Contato</label>
+                <input type="tel" placeholder=" Telefone" required>
+                <input type="email" placeholder=" E-mail">
+                <br><br><br>
+
+                <h3>Dados do Véiculo</h3>
+                <label>Placa</label>
+                <input type="text" placeholder="Placa do véiculo" required>
+
+                <label>Marca</label>
+                <input type="text" placeholder="Marca" required>
+
+                <label>Ano/modelo</label>
+                <input type="text" placeholder="Ano/modelo" required>
+
+                <label>Cor</label>
+                <input type="text" placeholder="Cor" required>
+
+                <label>Chassis</label>
+                <input type="text" placeholder="Chassis" required>
+
+                <label>Ano de Compra</label>
+                <select name="" id="" >
+                    <option value="" disabled selected >ANO</option>
+                    <option value="">2024</option>
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                    <option value="">2014</option>
+                    <option value="">2013</option>
+                    <option value="">2012</option>
+                    <option value="">2011</option>
+                    <option value="">2010</option>
+                    <option value="">2009</option>
+                    <option value="">2008</option>
+                    <option value="">2007</option>
+                    <option value="">2006</option>
+                    <option value="">2005</option>
+                    <option value="">2004</option>
+                    <option value="">2003</option>
+                    <option value="">2002</option>
+                    <option value="">2001</option>
+                    <option value="">2000</option>
+                </select>
+            
+                <label for="condition">Estado do Veículo</label>
+                <select id="condition">
+                    <option value="" disabled selected>Condição</option>
+                    <option value="novo">Novo</option>
+                    <option value="usado">Usado</option>
+                </select>
+
+                <label>Informações adicionais</label>
+                <input type="text" id="text_area" >
+
+
+                <input type="submit" id="submit_form" value="Enviar">
+
+
+            </form>
+            <p>&copy Mobilize</p>
+
+       
+
+
+          </aside>
+
+
+
+
+    </main>
+
+
+
+
+
+</body>
+</html>

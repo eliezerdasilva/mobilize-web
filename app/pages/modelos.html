@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/app/style/style.css">
+  <link rel="stylesheet" href="/src/app/style/header.css">
+  <link rel="icon" href="/src/assets/images/logo_mob.png">
+  <title>Mobilize.com</title>
+  <script src="/src/app/scripts/scriptIndex.js"></script>
+  <script src="/src/app/scripts/scriptModelos.js"></script>
+  <script src="/src/app/scripts/scriptBuy.js"></script>
+  <script src="/src/app/scripts/header.js"></script>
+  <script src="https://kit.fontawesome.com/0319e9b74e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/src/app/style/buy_options.css">
+  <link rel="stylesheet" href="/src/app/style/foot.css">
+  <link rel="stylesheet" href="/src/app/style/global.css">
+</head>
+<body>
+  <header>
+    <div class="bg-surface-color">
+      <nav class="container">
+        <a href="index.html" id="logo">
+          <img id="logo_mob" src="/src/assets/images/logo_mob.png" alt="Logo">
+        </a>
+        <ul id="primary-menu">
+          <div class="menu">
+            <a href="#">Comprar</a>
+            <div class="dropdown-content">
+              <a href="buy_options.html" class="dropdown-item"><i class="fa-solid fa-car-side"></i> Carros Usados</a>
+              <a href="buy_options.html" class="dropdown-item"><i class="fa-solid fa-car-side"></i> Carros Novos</a>
+              <a href="#" class="dropdown-item"><i class="fa-solid fa-motorcycle"></i> Motos Usadas</a>
+              <a href="#" class="dropdown-item"><i class="fa-solid fa-motorcycle"></i> Motos Novas</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a href="#">Vender</a>
+            <div class="dropdown-content">
+              <a href="sell.html" class="dropdown-item"><i class="fa-solid fa-car-on"></i> Vender Carro</a>
+              <a href="sell.html" class="dropdown-item"><i class="fa-solid fa-motorcycle"></i> Vender Moto</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a href="buy_options.html">Pesquisar</a>
+          </div>
+          <div class="menu">
+            <a href="#">Ajuda</a>
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item"><i class="fa-solid fa-globe"></i> Dúvidas Frequentes</a>
+              <a href="#" class="dropdown-item"><i class="fa-solid fa-phone"></i> Contato</a>
+            </div>
+          </div>
+          <li class="nav-item" id="auth-button"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <aside class="filters">
+            
+      <h2>Filtros</h2>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder=" Ex:Chevrolet Tracker" name="" id="">
+
+      <label for="state_city">Regiões e Cidades</label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder=" Digite seu Estado/Cidade" name="" id="">
+
+      <select id="filter_options">
+          <option value="">Mais Destaque</option>
+          <option value="">Menores preços</option>
+          <option value="">Maiores preços</option>
+          <option value="">Recentes</option>
+      </select>
+
+      <label for="distance">Distância</label>
+      <select id="distance">
+        <option value="100km">100km</option>
+        <option value="200km">200km</option>
+        <option value="500km">500km</option>
+        <option value="1000km">1000km</option>
+        <option value="All">Todo Brasil</option>
+      </select>
+
+
+      <label for="brand">Marca:</label>
+      <select id="brand">
+        <option value="renault">Renault</option>
+        <option value="fiat">Fiat</option>
+        <option value="chevrolet">Chevrolet</option>
+      </select>
+
+      <label for="model">Modelo:</label>
+      <select id="model">
+        <option value="choicemodel">Modelo</option>
+        <option value="x">Modelo X</option>
+        <option value="y">Modelo Y</option>
+        <option value="z">Modelo Z</option>
+      </select>
+
+      <label for="ano">Ano</label>
+      <select name="" id="">      
+          <option>1990</option>
+          <option>1991</option>
+          <option>1992</option>
+          <option>1993</option>
+          <option>1994</option>
+          <option>1995</option>
+          <option>1996</option>
+          <option>1997</option>
+          <option>1998</option>
+          <option>1999</option>
+          <option>2000</option>
+          <option>2001</option>
+      </select>
+
+      <label for="condition">Estado do Veículo</label>
+      <select id="condition">
+          <option value="novo">Novo</option>
+          <option value="usado">Usado</option>
+      </select>
+
+      <label for="style">Estilo</label>
+      <select id="style">
+          <option value="">Estilo</option>
+          <option value="">Picape</option>
+          <option value="">Conversível</option>
+          <option value="">Van</option>
+          <option value="">Hatch</option>
+          <option value="">Suv</option>
+          <option value="">Sedan</option>
+      </select>
+
+      <label for="color">Cor</label>
+      <select id="color">
+          <option value="">Cor</option>
+          <option value="">Vermelho</option>
+          <option value="">Branco</option>
+          <option value="">Azul</option>
+          <option value="">Laranja</option>
+          <option value="">Verde</option>
+
+
+      </select>
+
+
+    </aside>
+
+
+  <section class="car-listing" id="car-listing">
+    <!-- Conteúdo-->
+  </section>
+
+  </main>
+
+
+
+
+  
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul><li><a href="index.html">Mobilize</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Veículos</h4>
+          <ul><li><a href="modelos.html">Clique aqui</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm">Código de Defesa do Consumidor</a></li>
+            <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">LGPD</a></li>
+            <li><a href="#">Termos de Uso e Política de Privacidade</a></li>
+            <li><a href="#">Relatório de Transparência</a></li>
+            <li><a href="#">Gerenciamento de Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Siga-nos</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

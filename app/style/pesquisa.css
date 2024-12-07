@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 900px; /* Garante que o HTML e o BODY ocupem 100% da altura da página */
+}
+
+header {
+    z-index: 1000; /* Garante que o cabeçalho fique sobreposto ao conteúdo */
+}
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.filtro-componente {
+    margin-top: 100px;
+    background-color: rgb(226, 240, 240);
+    width: 35vh; /* Use porcentagem para largura */
+    height: 100vh; /* Garante que o filtro ocupe 100% da altura do pai */
+}
+
+.body-pesquisa {
+    display: flex; /* Permite usar Flexbox para alocar espaço */
+    height: calc(100vh - 56px); /* Ajusta a altura total da body, subtraindo a altura do header */
+    overflow-y: auto; /* Adiciona rolagem se necessário */
+}
+
+.car-list {
+    flex-grow: 1; /* Permite que esta área ocupe todo o espaço restante */
+}
+.input-filtro{
+    width: 18vh;
+}
+@media (max-width: 500px) {
+   .filtro-componente{
+    visibility: hidden;
+    display: none;
+    }
+}
