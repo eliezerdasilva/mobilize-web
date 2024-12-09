@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
     } else {
        
-        authButton.innerHTML = `<a href="login.html" class="btn btn-primary">Entrar</a>`;
+        authButton.innerHTML = `<a href="login.html" class="" style="color:black" >Entrar</a>`;
     }
 });
 
