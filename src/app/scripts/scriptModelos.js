@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", async function () {
   const urlParams = new URLSearchParams(window.location.search);
   const categoria = urlParams.get("categoria");
   const marca = urlParams.get("marca");
-  
+  const search = urlParams.get("search");
+
   const carros = await carregarCarros();
 
   let carrosFiltrados = [];
@@ -83,6 +84,18 @@ document.addEventListener("DOMContentLoaded", async function () {
       const carrosFiltradosString = localStorage.getItem('carrosFiltrados');
       if (carrosFiltradosString) {
         const carrosFiltrados = JSON.parse(carrosFiltradosString);
+        renderCarros(carrosFiltrados);
+      }else{
+        let carrosFiltrados = carros.filter(carro => 
+          carro.marca.toLowerCase().includes(search.toLowerCase())
+        );
+        
+        if (carrosFiltrados.length === 0) {
+          carrosFiltrados = carros.filter(carro =>
+            carro.modelo.toLowerCase().includes(search.toLowerCase())
+          );
+        }
+        
         renderCarros(carrosFiltrados);
       }
 

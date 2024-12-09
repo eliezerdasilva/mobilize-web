@@ -76,3 +76,22 @@ function redirectToModel(element) {
   const encodedBrand = encodeURIComponent(brandName);
   window.location.href = `modelos.html?marca=${encodedBrand}`;
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const searchButton = document.getElementById('unique-search-btn');
+  const searchInput = document.getElementById('unique-search-input');
+ 
+  searchButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Evita o comportamento padrão do botão em formulários.
+    
+    const query = searchInput.value.trim();
+    
+    if (query) {
+      window.location.href = `modelos.html?search=${encodeURIComponent(query)}`;
+    } else {
+      alert("Por favor, insira um termo de busca.");
+    }
+  });
+});

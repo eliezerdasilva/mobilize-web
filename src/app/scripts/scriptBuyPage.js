@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderCarros(carros) {
     const carListContainer = document.getElementById("car-list");
     carListContainer.innerHTML = ""; // Limpa o container antes de renderizar
-    
+
     carros.forEach((carro, index) => {
       const carCard = `
         <div class="car-card" data-index="${index}">
@@ -24,25 +24,59 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       carListContainer.insertAdjacentHTML("beforeend", carCard);
     });
-  
+
     // Adiciona evento de clique em "Ver parcelas"
-    document.querySelectorAll(".view-details").forEach(button => {
+    document.querySelectorAll(".view-details").forEach((button) => {
       button.addEventListener("click", (event) => {
         const carIndex = event.target.dataset.index;
         const selectedCar = carros[carIndex];
-  
+
         // Salvar os dados do carro no localStorage
         localStorage.setItem("selectedCar", JSON.stringify(selectedCar));
-  
+
         // Redirecionar para a página buy.html
         window.location.href = "buy.html";
       });
     });
   }
-  
+  const searchButton = document.getElementById("search_btn");
+  const searchInput = document.getElementById("search");
 
-  fetch('/src/app/json/carros.json')
-    .then(response => response.json())
-    .then(data => renderCarros(data.carros))
-    .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
+  let carros = [];
+  // Carregar os carros do arquivo JSON
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "/src/app/json/carros.json", true);
+
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      var data = JSON.parse(xhr.responseText);
+      carros = data.carros;
+      renderCarros(carros);
+    } else {
+      console.error("Erro ao carregar o arquivo JSON");
+    }
+  };
+
+  xhr.send();
+
+  searchButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    console.log("ee");
+    const query = searchInput.value.trim();
+
+    if (query && query !== "") {
+      console.log("Filtrando carros...");
+
+      const carrosFiltrados = carros.filter(
+        (carro) =>
+          carro.marca.toLowerCase().includes(query.toLowerCase()) ||
+          carro.modelo.toLowerCase().includes(query.toLowerCase())
+      );
+
+      renderCarros(carrosFiltrados);
+    } else {
+      console.log("Sem filtro");
+      renderCarros(carros);
+    }
+  });
 });
